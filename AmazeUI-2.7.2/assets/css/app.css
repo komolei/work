@@ -1,0 +1,96 @@
+li {
+    list-style: none;
+}
+ 
+@media all and (min-width:1000px) {
+    .am-slider img {
+        height: 25rem;
+    }
+    .am-slider,
+    {
+        height: 20rem;
+    }
+}
+ 
+.am-icon-search {
+    position: absolute;
+    margin-left: -2.2rem;
+}
+ 
+#search {
+    transition: all 1.8s ease-out;
+}
+ 
+#search:hover {
+    width: 18rem;
+}
+ 
+.am-control-nav .am-control-thumbs {
+    position: absolute;
+    left: 50%;
+    border: 1px solid red;
+}
+ 
+.container-box {
+    padding-top: 1rem;
+}
+ 
+.line-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+ 
+.line-clamp-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+ 
+#photo-a {
+    padding-top: 2rem;
+}
+ 
+.meta {
+    padding-bottom: 1rem;
+}
+ 
+.recommend {
+    font-size: 14px;
+}
+ 
+.recommend-right {
+    float: right;
+}
+ 
+.lt,
+.gt {
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+ 
+.recommend {
+    color: #969696;
+}
+ 
+.containerOfAuthor li {
+    list-style: none;
+}
+ 
+.containerOfAuthor-ul img {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+ 
+#goTop {
+    position: fixed;
+    top: -10%;
+}
+ 
+ 
+/*author*/
