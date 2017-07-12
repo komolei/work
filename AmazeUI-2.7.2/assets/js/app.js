@@ -34,7 +34,9 @@ function textMiddle() {
         })
     }
 }
-$(window).ready(textMiddle)
+textMiddle();
+// $(window).ready(textMiddle)
+// $(window).load(textMiddle)
 $(window).resize(textMiddle);
 
 //懒加载
@@ -145,27 +147,32 @@ $('#ajax').on('click', function() {
     })
 })
 
+//goTop
 $('#goTop').on('mouseover', function() {
 
 })
 
 // 去掉index的右侧内容区域
-var containerLeft = $('#container-left')
-var containerRight = $('#container-right')
-$(window).resize(function() {
-        if ($(this).width() < 640) {
-            containerRight.css({ display: "none" });
-            containerLeft.removeClass("am-u-sm-8 am-u-md-8 am-u-lg-8");
-            containerLeft.addClass("am-u-sm-12 am-u-md-12 am-u-lg-12");
+var containerLeft = $('#container-left');
+var containerRight = $('#container-right');
 
-        } else {
-            containerRight.css({ display: "block" });
-            containerLeft.removeClass("am-u-sm-12 am-u-md-12 am-u-lg-12");
-            containerLeft.addClass("am-u-sm-8 am-u-md-8 am-u-lg-8");
+function cancel() {
+    if ($(this).width() < 640) {
+        containerRight.css({ display: "none" });
+        containerLeft.removeClass("am-u-sm-8 am-u-md-8 am-u-lg-8");
+        containerLeft.addClass("am-u-sm-12 am-u-md-12 am-u-lg-12");
 
-        }
-    })
-    //查看推荐作者,发送ajax,请求五条数据
+    } else {
+        containerRight.css({ display: "block" });
+        containerLeft.removeClass("am-u-sm-12 am-u-md-12 am-u-lg-12");
+        containerLeft.addClass("am-u-sm-8 am-u-md-8 am-u-lg-8");
+
+    }
+}
+// cancel();
+$(window).resize(cancel)
+
+//查看推荐作者,发送ajax,请求五条数据
 var number = $('.number');
 var i = 1;
 number.text(i);
@@ -241,3 +248,23 @@ $('.gt').on('click', function() {
 })
 
 //author
+
+// share more
+var shareMore = $('#shareMore');
+var shareList = $('.share-list');
+shareMore.on('click', function() {
+    shareList.css({ display: "block" })
+        // var time=setTimeout(function() {
+        //     shareList.css({ display: "none" })
+        // }, 2000);
+
+
+});
+// shareMore.on('mouseleave', function() {
+//         shareList.css({ display: "none" })
+
+//     })
+
+//share-right module 换行
+// var shareRight=$('shareRight');
+// use css control

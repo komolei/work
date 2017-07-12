@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js">
- 
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,41 +8,41 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Amaze UI</title>
- 
+
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
- 
+
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp" />
- 
+
     <link rel="icon" type="image/png" href="assets/i/favicon.png">
- 
+
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
- 
+
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
- 
+
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
     <meta name="msapplication-TileColor" content="#0e90d2">
- 
+
     <link rel="stylesheet" href="assets/css/amazeui.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
- 
+
 <body>
     <header class="am-topbar am-topbar-fixed-top ">
         <h1 class="am-topbar-brand">
             <a href="#">Amaze UI</a>
         </h1>
- 
+
         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
- 
+
         <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
             <ul class="am-nav am-nav-pills am-topbar-nav">
                 <li class="am-active"><a href="#">首页</a></li>
@@ -62,21 +62,21 @@
                     </ul>
                 </li>
             </ul>
- 
+
             <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
                 <div class="am-form-group">
                     <input type="text" id="search" class="am-form-field am-input-sm am-round" placeholder="搜索"><i class="am-icon-search am-icon-fw"></i>
                 </div>
             </form>
- 
+
             <div class="am-topbar-right">
                 <a class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
                 <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">注册</button>
- 
+
             </div>
         </div>
     </header>
- 
+
     <div class="am-u-sm-8 am-u-sm-centered">
         <h1 class="am-text-center">别怪他人太冷漠，每个人都有自己的不容易</h1>
         <!--作者信息-->
@@ -108,18 +108,37 @@
         </div>
         <!--作者信息加关注-->
         <!--分享-->
-        <div class="share ">
-            <div class="share-left am-vertical-align am-inline-block" style="height:48px">
+        <div class="share">
+            <div class="share-left am-vertical-align am-inline-block">
                 <a href="#" class="am-btn am-btn-danger am-round"> <span class="am-icon-heart am-margin-right-2 am-vertical-align-middle">　喜欢</span><span class="am-vertical-align-middle">　|　</span><span class="am-vertical-align-middle">36</span></a>
             </div>
-            <div class="share-right am-inline-block am-fr">
+            <div class="share-right am-inline-block am-fr am-cf">
                 <a href="#" class="am-btn am-padding-0"> <span class="am-icon-weixin  am-icon-btn am-round am-success"> </span></a>
                 <a href="#" class="am-btn am-padding-0"> <span class="am-icon-weibo  am-icon-btn am-round am-primary"> </span></a>
-                <a href="#" class="am-btn am-btn-danger am-round"> 更多分享</a>
- 
+                <a id="shareMore" href="javascript:void(0)" class="am-btn am-btn-danger am-round ">
+                    <span>更多分享</span>
+
+
+                </a>
+                <ul class="share-list am-padding-sm" id="share-list">
+                    <li>
+                        <a href="#">
+                            <span class="am-icon-qq"></span><span>分享到QQ空间</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="am-icon-twitter"></span><span>分享到Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="am-icon-google"></span><span>分享到Google+</span></a>
+                    </li>
+
+                </ul>
             </div>
         </div>
-        <div class="comments">
+        <div class="comments am-padding-top-sm">
             <ul class="am-comment-list am-padding-0 am-margin-top-sm ">
                 <li class="am-comment am-margin-top-sm">
                     <article class="am-comment">
@@ -128,7 +147,7 @@
                             <img class="am-comment-avatar" alt="" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" />
                             <!-- 评论者头像 -->
                         </a>
- 
+
                         <div class="am-comment-main">
                             <!-- 评论内容容器 -->
                             <header class="am-comment-hd">
@@ -140,12 +159,12 @@
                                     评论于 <time datetime="">...</time>
                                 </div>
                             </header>
- 
+
                             <div class="am-comment-bd">..ddddddd.</div>
                             <!-- 评论内容 -->
                             <div class="icon"><span class="am-icon-thumbs-o-up am-inline-block am-padding-xs"></span><span>赞</span><span class="am-icon-commenting-o am-padding-xs"></span><span>回复</span></div>
                         </div>
- 
+
                     </article>
                 </li>
                 <li class="am-comment am-margin-top-sm">
@@ -155,7 +174,7 @@
                             <img class="am-comment-avatar" alt="" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" />
                             <!-- 评论者头像 -->
                         </a>
- 
+
                         <div class="am-comment-main">
                             <!-- 评论内容容器 -->
                             <header class="am-comment-hd">
@@ -167,21 +186,20 @@
                                     评论于 <time datetime="">...</time>
                                 </div>
                             </header>
- 
+
                             <div class="am-comment-bd">..ddddddd.</div>
                             <!-- 评论内容 -->
                             <div class="icon"><span class="am-icon-thumbs-o-up am-inline-block am-padding-xs"></span><span>赞</span><span class="am-icon-commenting-o am-padding-xs"></span><span>回复</span></div>
                         </div>
- 
+
                     </article>
                 </li>
             </ul>
         </div>
     </div>
-    <div>
-        <button data-am-smooth-scroll class="am-btn am-btn-success am-fl am-u-sm-1 am-u-sm-offset-11 am-text-center " id="goTop "><span class="am-icon-chevron-up"></span></button>
-    </div>
- 
+
+    <button data-am-smooth-scroll class="am-btn am-btn-primary am-icon-chevron-up am-fr am-btn-sm" id="goTop"></button>
+
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="assets/js/jquery.min.js"></script>
     <!--<![endif]-->
@@ -191,6 +209,12 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
     <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js "></script>
+
 </body>
- 
+
+</html>
+
+</body>
+
 </html>
