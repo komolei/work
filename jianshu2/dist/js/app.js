@@ -71,9 +71,9 @@
 
 
 var a = __webpack_require__(1);
-__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./index.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-a(1);
-console.log(a);
+// require('./index.scss');
+// a(1);
+// console.log(a);
 
 /***/ }),
 /* 1 */
@@ -85,7 +85,8 @@ console.log(a);
 var a = function a(sum) {
   return sum + 1;
 };
-module.exports = a;
+var ul = "<div>I am a god!</div>";
+module.exports = document.body.innerHTML = ul;
 
 /***/ })
 /******/ ]);

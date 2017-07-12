@@ -1,2 +1,3 @@
 const a = (sum) => { return sum + 1 }
-module.exports = a;
+const ul = `<div>I am a god!</div>`
+module.exports = document.body.innerHTML = ul;
