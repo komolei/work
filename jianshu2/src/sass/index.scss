@@ -198,16 +198,13 @@
     }
     
     @mixin smallBox {
-        // position: relative;
-        // width: 100%;
-        .smallBox-search {
-            @include search;
-            // position: relative;
-            // top: 30px;
-        }
-        .smallBox-dropList {
-            @include dropList;
-        }
+      a{
+          width: 100%;
+
+      }
+     .smallBox-search {
+        
+     }
     }
     
     @media all and (min-width:768px) {
@@ -238,6 +235,10 @@
         }
         .dropList {
             @include dropList;
+        }
+        .smallList {
+            @include smallBox;
+            display: none;
         }
     }
     
@@ -271,6 +272,11 @@
         .dropList {
             @include dropList;
         }
+        .smallList {
+            @include smallBox;
+            display: none;
+        }
+
     }
     
     @media screen and (max-width:467px) {

@@ -31,7 +31,11 @@
                     <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
                         <input name="utf8" type="hidden" value="✓">
                         <input type="text" placeholder="搜索" class="search-input">
-                        <a class="search-btn" href="javascript:void(null)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg></a>
+                        <a class="search-btn" href="javascript:void(null)">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </a>
                     </form>
                 </div>
                 <div class="dropList">
@@ -60,30 +64,31 @@
             <!-- <svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg> -->
         </nav>
         <div class="smallBox">
-            <div class="smallBox-search">
-                <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
-                    <input name="utf8" type="hidden" value="✓">
-                    <input type="text" placeholder="搜索" class="search-input">
-                    <a class="search-btn" href="javascript:void(null)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg></a>
-                </form>
-            </div>
-            <div class="smallBox-dropList">
-                <span>菜单</span>
-                <ul class="dropList-ul">
-                    <a href="#" target="_blank" target="_blank">
-                        <li><span>菜单栏</span></li>
-                    </a>
-                    <a href="#" target="_blank">
-                        <li><span>兴趣</span></li>
-                    </a>
-                    <a href="#" target="_blank">
-                        <li><span>看书</span></li>
-                    </a>
-                    <a href="#" target="_blank">
-                        <li><span>写字</span></li>
-                    </a>
-                </ul>
-            </div>
+            <ul>
+                <a href="">
+                    <li><span>菜单</span></li>
+                </a>
+                <a href="">
+                    <li><span></span></li>
+                </a>
+                <a href="">   
+                    <li><span></span></li>
+                </a>
+                <a href="">
+                    <li>
+                        <div class="smallBox-search">
+                            <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
+                                <input type="text" placeholder="搜索" class="smallBox-search-input">
+                                <a class="smallBox-search-btn" href="javascript:void(null)">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-search"></use>
+                                    </svg>
+                                </a>
+                            </form>
+                        </div>
+                    </li>
+                </a>
+            </ul>
         </div>
     </header>
 </body>
