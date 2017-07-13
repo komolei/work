@@ -8,6 +8,7 @@ const path = require('path'),
 let base = {
     index: './app.js',
 
+
 };
 
 module.exports = {
@@ -15,12 +16,13 @@ module.exports = {
     target: "web",
     entry: base,
     output: {
-        path: path.resolve(__dirname, 'dist/js'),
+        path: path.resolve(__dirname, 'dist'),
         filename: '[name].js'
     },
     resolve: {
         alias: {
-            test: path.resolve(__dirname, 'test/test.js')
+            // test: path.resolve(__dirname, 'test/test.js'),
+            jquery: path.resolve(__dirname, './src/js/jquery.min.js')
         }
     },
     plugins: [
@@ -28,10 +30,12 @@ module.exports = {
             filename: "[name].css",
             disable: false,
             allChunks: true
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery'
         })
     ],
     module: {
-        //entry => loaders ==> webpack ==> output
         rules: [{
                 test: /\.js[x]?$/,
                 exclude: /node_modules/,
