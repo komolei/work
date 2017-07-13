@@ -3,25 +3,90 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../index.css">
+    <!-- <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.css" rel="stylesheet"> -->
+    <script src="https://at.alicdn.com/t/font_7y094enqptd42t9.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <!-- <p>webpack</p> -->
+        <nav class="navbar clearfix">
+            <div class="container clearfix">
+                <a class="logo" href="#" target="_blank" target="_blank"><img src="http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png" alt="logo"></a>
+                <a class="btn signup" href="#" target="_blank">注册</a>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
+                        <input name="utf8" type="hidden" value="✓">
+                        <input type="text" placeholder="搜索" class="search-input">
+                        <a class="search-btn" href="javascript:void(null)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg></a>
+                    </form>
+                </div>
+                <div class="dropList">
+                    <span>菜单</span>
+                    <ul class="dropList-ul">
+                        <a href="#" target="_blank" target="_blank">
+                            <li><span>菜单栏</span></li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <li><span>兴趣</span></li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <li><span>看书</span></li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <li><span>写字</span></li>
+                        </a>
+                    </ul>
+                </div>
+                <button class="smallList">
+                    <span class="icon-line"></span>
+                    <span class="icon-line"></span>
+                    <span class="icon-line"></span>
+                </button>
+            </div>
+            <!-- <svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg> -->
+        </nav>
+        <div class="smallBox">
+            <div class="smallBox-search">
+                <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
+                    <input name="utf8" type="hidden" value="✓">
+                    <input type="text" placeholder="搜索" class="search-input">
+                    <a class="search-btn" href="javascript:void(null)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg></a>
+                </form>
+            </div>
+            <div class="smallBox-dropList">
+                <span>菜单</span>
+                <ul class="dropList-ul">
+                    <a href="#" target="_blank" target="_blank">
+                        <li><span>菜单栏</span></li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li><span>兴趣</span></li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li><span>看书</span></li>
+                    </a>
+                    <a href="#" target="_blank">
+                        <li><span>写字</span></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </header>
 </body>
-<script>
-    var pageWidth = document.documentElement.clientWidth / 16;
-    var content = "html:{font-size:" + pageWidth + "px}"
-    console.log(pageWidth * 16);
-    var style = document.createElement("style");
-    style.innerHTML = content;
-    document.head.appendChild(style);
-</script>
 <script src="../index.js"></script>
 
 </html>
