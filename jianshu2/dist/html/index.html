@@ -31,7 +31,11 @@
                     <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
                         <input name="utf8" type="hidden" value="✓">
                         <input type="text" placeholder="搜索" class="search-input">
-                        <a class="search-btn" href="javascript:void(null)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg></a>
+                        <a class="search-btn" href="javascript:void(null)">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-search"></use>
+                            </svg>
+                        </a>
                     </form>
                 </div>
                 <div class="dropList">
@@ -60,32 +64,61 @@
             <!-- <svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg> -->
         </nav>
         <div class="smallBox">
-            <div class="smallBox-search">
-                <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
-                    <input name="utf8" type="hidden" value="✓">
-                    <input type="text" placeholder="搜索" class="search-input">
-                    <a class="search-btn" href="javascript:void(null)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-search"></use></svg></a>
-                </form>
-            </div>
-            <div class="smallBox-dropList">
-                <span>菜单</span>
-                <ul class="dropList-ul">
-                    <a href="#" target="_blank" target="_blank">
-                        <li><span>菜单栏</span></li>
-                    </a>
-                    <a href="#" target="_blank">
-                        <li><span>兴趣</span></li>
-                    </a>
-                    <a href="#" target="_blank">
-                        <li><span>看书</span></li>
-                    </a>
-                    <a href="#" target="_blank">
-                        <li><span>写字</span></li>
-                    </a>
-                </ul>
-            </div>
+            <ul>
+                <a href="">
+                    <li><span>菜单</span></li>
+                </a>
+                <a href="">
+                    <li><span>读书</span></li>
+                </a>
+                <a href="">
+                    <li><span>写字</span></li>
+                </a>
+                <a href="javascript:void(null)">
+                    <li>
+                        <div class="smallBox-search">
+                            <form target="_blank" action="/search" accept-charset="UTF-8" method="get">
+                                <input name="utf8" type="hidden" value="✓">
+                                <input type="text" placeholder="搜索" class="smallBox-search-input">
+                                <a class="smallBox-search-btn" href="javascript:void(null)">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-search"></use>
+                                    </svg>
+                                </a>
+                            </form>
+                        </div>
+                    </li>
+                </a>
+            </ul>
         </div>
     </header>
+    <div class="content">
+        <div class="carousel">
+            <ul class="ct-img">
+                <li index='0'>
+                    <a href=""><img src="http://img.hb.aicdn.com/60a39b487899dd6468ecd11f651eb49b34b564894c3fc-kZY1io_fw658" alt=""></a>
+                </li>
+                <li index='1'>
+                    <a href=""><img src="http://img.hb.aicdn.com/7fba91ae701ac1d8784ff0c37c1f6b30f017a45856106-G6sTxo_fw658" alt=""></a>
+                </li>
+                <li index='2'>
+                    <a href=""><img src="http://img.hb.aicdn.com/4ea78ff63d50ea74d6cffa67d9ab32daba4daa234f735-SAfvcW_fw658" alt=""></a>
+                </li>
+                <li index='3'>
+                    <a href=""><img src="http://img.hb.aicdn.com/5b8943eeda6a58def7ee1f7f53aae42f37bd2e145f3d4-IC8YkD_fw658" alt=""></a>
+                </li>
+            </ul>
+            <a class="carousel-btn btn-pre" href="">&lt;</a>
+            <a class="carousel-btn btn-next" href="">&gt;</a>
+            <ul class="bullet">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+    </div>
 </body>
 <script src="../index.js"></script>
 
