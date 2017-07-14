@@ -180,7 +180,155 @@
       /*background: #fff;*/
       border: 1px solid #fff; }
     .carousel .active {
-      background: #111; } }
+      background: #111; }
+    .carousel .carousel-btn {
+      width: 50px;
+      height: 50px;
+      font-size: 50px;
+      line-height: 50px; }
+    .carousel .bullet li {
+      width: 40px;
+      margin-left: 10px; }
+  .content-text {
+    margin-top: 20px; }
+    .content-text a {
+      color: #111; }
+    .content-text .list-left .note-list {
+      width: 75%;
+      padding-left: 5%;
+      float: left; }
+      .content-text .list-left .note-list .have-img {
+        position: relative;
+        width: 100%;
+        margin: 0 0 17px;
+        padding: 0 2px 17px 0;
+        border-bottom: 1px solid #f0f0f0;
+        word-wrap: break-word;
+        line-height: 20px;
+        min-width: 112px; }
+        .content-text .list-left .note-list .have-img .wrap-img {
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -58px;
+          bottom: 40px;
+          width: 125px;
+          height: 100px; }
+        .content-text .list-left .note-list .have-img .img-blur-done {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          border: 1px solid #f0f0f0; }
+        .content-text .list-left .note-list .have-img .content {
+          padding-right: 140px; }
+      .content-text .list-left .note-list .content .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333; }
+      .content-text .list-left .note-list .content .abstract {
+        margin: 2 0 8px;
+        font-size: 13px;
+        line-height: 24px;
+        color: #969696; }
+      .content-text .list-left .note-list .content .meta {
+        padding-right: 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px; }
+        .content-text .list-left .note-list .content .meta .collection-tag {
+          padding: 2px 6px;
+          color: #ea6f5a !important;
+          border: 1px solid rgba(236, 97, 73, 0.7);
+          border-radius: 3px; }
+      .content-text .list-left .note-list .have-no-img {
+        position: relative;
+        width: 100%;
+        margin: 0 0 17px;
+        padding: 0 2px 17px 0;
+        border-bottom: 1px solid #f0f0f0;
+        word-wrap: break-word;
+        line-height: 20px;
+        min-width: 112px; }
+        .content-text .list-left .note-list .have-no-img .content {
+          padding-right: 0; }
+    .content-text .list-left .ajax {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 40px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #a5a5a5;
+      display: block;
+      outline: none;
+      cursor: pointer; }
+    .content-text .list-right {
+      width: 20%;
+      padding-right: 2%;
+      float: right; }
+      .content-text .list-right > div > img {
+        width: 100%; }
+  .recommend {
+    margin-top: 50px; }
+    .recommend .header {
+      font-size: 14px;
+      color: #969696;
+      width: 100%;
+      padding-bottom: 10px; }
+      .recommend .header .recommend-right {
+        float: right; }
+        .recommend .header .recommend-right .lt,
+        .recommend .header .recommend-right .gt {
+          border: 1px solid #dcdcdc;
+          border-radius: 3px; }
+    .recommend #recommendOfAuthor li {
+      float: right; }
+    .recommend .containerOfAuthor-ul {
+      width: 100%;
+      padding-top: 5px; }
+      .recommend .containerOfAuthor-ul .img > img {
+        float: left;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%; }
+      .recommend .containerOfAuthor-ul .look-a {
+        float: right;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 13px;
+        color: #42c02e; }
+      .recommend .containerOfAuthor-ul .word a span {
+        font-size: 12px;
+        color: #969696; }
+    .recommend .containerOfAuthor-btn {
+      display: block;
+      text-align: center;
+      padding: 7px 7px 7px 12px;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #787878;
+      background-color: #f7f7f7;
+      border: 1px solid #dcdcdc;
+      border-radius: 4px; }
+  .gotop {
+    position: fixed;
+    right: 0;
+    top: 100%;
+    transform: translateY(-100%);
+    padding: 11px 10px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #969696;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    width: 80px; } }
 
 @media all and (min-width: 467px) and (max-width: 768px) {
   * {
@@ -363,7 +511,149 @@
       /*background: #fff;*/
       border: 1px solid #fff; }
     .carousel .active {
-      background: #111; } }
+      background: #111; }
+    .carousel .bullet li {
+      width: 20px; }
+  .content-text {
+    margin-top: 20px; }
+    .content-text a {
+      color: #111; }
+    .content-text .list-left .note-list {
+      width: 75%;
+      padding-left: 5%;
+      float: left; }
+      .content-text .list-left .note-list .have-img {
+        position: relative;
+        width: 100%;
+        margin: 0 0 17px;
+        padding: 0 2px 17px 0;
+        border-bottom: 1px solid #f0f0f0;
+        word-wrap: break-word;
+        line-height: 20px;
+        min-width: 112px; }
+        .content-text .list-left .note-list .have-img .wrap-img {
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -58px;
+          bottom: 40px;
+          width: 125px;
+          height: 100px; }
+        .content-text .list-left .note-list .have-img .img-blur-done {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          border: 1px solid #f0f0f0; }
+        .content-text .list-left .note-list .have-img .content {
+          padding-right: 140px; }
+      .content-text .list-left .note-list .content .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333; }
+      .content-text .list-left .note-list .content .abstract {
+        margin: 2 0 8px;
+        font-size: 13px;
+        line-height: 24px;
+        color: #969696; }
+      .content-text .list-left .note-list .content .meta {
+        padding-right: 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px; }
+        .content-text .list-left .note-list .content .meta .collection-tag {
+          padding: 2px 6px;
+          color: #ea6f5a !important;
+          border: 1px solid rgba(236, 97, 73, 0.7);
+          border-radius: 3px; }
+      .content-text .list-left .note-list .have-no-img {
+        position: relative;
+        width: 100%;
+        margin: 0 0 17px;
+        padding: 0 2px 17px 0;
+        border-bottom: 1px solid #f0f0f0;
+        word-wrap: break-word;
+        line-height: 20px;
+        min-width: 112px; }
+        .content-text .list-left .note-list .have-no-img .content {
+          padding-right: 0; }
+    .content-text .list-left .ajax {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 40px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #a5a5a5;
+      display: block;
+      outline: none;
+      cursor: pointer; }
+    .content-text .list-right {
+      width: 20%;
+      padding-right: 2%;
+      float: right; }
+      .content-text .list-right > div > img {
+        width: 100%; }
+  .recommend {
+    margin-top: 50px; }
+    .recommend .header {
+      font-size: 14px;
+      color: #969696;
+      width: 100%;
+      padding-bottom: 10px; }
+      .recommend .header .recommend-right {
+        float: right; }
+        .recommend .header .recommend-right .lt,
+        .recommend .header .recommend-right .gt {
+          border: 1px solid #dcdcdc;
+          border-radius: 3px; }
+    .recommend #recommendOfAuthor li {
+      float: right; }
+    .recommend .containerOfAuthor-ul {
+      width: 100%;
+      padding-top: 5px; }
+      .recommend .containerOfAuthor-ul .img > img {
+        float: left;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%; }
+      .recommend .containerOfAuthor-ul .look-a {
+        float: right;
+        margin-top: 5px;
+        padding: 0;
+        font-size: 13px;
+        color: #42c02e; }
+      .recommend .containerOfAuthor-ul .word a span {
+        font-size: 12px;
+        color: #969696; }
+    .recommend .containerOfAuthor-btn {
+      display: block;
+      text-align: center;
+      padding: 7px 7px 7px 12px;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #787878;
+      background-color: #f7f7f7;
+      border: 1px solid #dcdcdc;
+      border-radius: 4px; }
+  .gotop {
+    width: 80px;
+    position: fixed;
+    right: 0;
+    top: 100%;
+    transform: translateY(-100%);
+    padding: 11px 10px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #969696;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; } }
 
 @media screen and (max-width: 467px) {
   * {
@@ -614,4 +904,109 @@
       /*background: #fff;*/
       border: 1px solid #fff; }
     .carousel .active {
-      background: #111; } }
+      background: #111; }
+  .content-text {
+    margin-top: 20px; }
+    .content-text a {
+      color: #111; }
+    .content-text .list-left .note-list {
+      width: 75%;
+      padding-left: 5%;
+      float: left; }
+      .content-text .list-left .note-list .have-img {
+        position: relative;
+        width: 100%;
+        margin: 0 0 17px;
+        padding: 0 2px 17px 0;
+        border-bottom: 1px solid #f0f0f0;
+        word-wrap: break-word;
+        line-height: 20px;
+        min-width: 112px; }
+        .content-text .list-left .note-list .have-img .wrap-img {
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -58px;
+          bottom: 40px;
+          width: 125px;
+          height: 100px; }
+        .content-text .list-left .note-list .have-img .img-blur-done {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          border: 1px solid #f0f0f0; }
+        .content-text .list-left .note-list .have-img .content {
+          padding-right: 140px; }
+      .content-text .list-left .note-list .content .title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333; }
+      .content-text .list-left .note-list .content .abstract {
+        margin: 2 0 8px;
+        font-size: 13px;
+        line-height: 24px;
+        color: #969696; }
+      .content-text .list-left .note-list .content .meta {
+        padding-right: 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px; }
+        .content-text .list-left .note-list .content .meta .collection-tag {
+          padding: 2px 6px;
+          color: #ea6f5a !important;
+          border: 1px solid rgba(236, 97, 73, 0.7);
+          border-radius: 3px; }
+      .content-text .list-left .note-list .have-no-img {
+        position: relative;
+        width: 100%;
+        margin: 0 0 17px;
+        padding: 0 2px 17px 0;
+        border-bottom: 1px solid #f0f0f0;
+        word-wrap: break-word;
+        line-height: 20px;
+        min-width: 112px; }
+        .content-text .list-left .note-list .have-no-img .content {
+          padding-right: 0; }
+    .content-text .list-left .ajax {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 40px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #a5a5a5;
+      display: block;
+      outline: none;
+      cursor: pointer; }
+    .content-text .list-right {
+      width: 20%;
+      padding-right: 2%;
+      float: right; }
+      .content-text .list-right > div > img {
+        width: 100%; }
+    .content-text .list-left .note-list {
+      width: 95%; }
+      .content-text .list-left .note-list .have-img .wrap-img {
+        width: 75px;
+        height: 60px; }
+      .content-text .list-left .note-list .have-img .content {
+        padding-right: 100px; }
+    .content-text .list-right {
+      display: none; }
+  .gotop {
+    position: fixed;
+    right: 0;
+    top: 100%;
+    transform: translateY(-100%);
+    padding: 11px 10px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #969696;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; } }

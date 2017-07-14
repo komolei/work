@@ -60,91 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-var _GoTop = __webpack_require__(9);
-var Carousel = __webpack_require__(8);
-var carousel = new Carousel($('.carousel'));
-carousel.bind();
-
-// console.dir(carousel.constructor.prototype.bind());
-$(window).resize(function () {
-    // var carousel = new _Carousel.init($('.carousel'));
-    // var carousel = new carousel($('.carousel'));
-    // carousel.prototype.bind();
-    // new _Carousel.init($('.carousel'), windowWidth);
-    // var windowWidth = $(window).width();
-    // console.log("window:", windowWidth);
-    carousel.bind();
-});
-// new _Carousel.init($('.carousel'));
-var index = __webpack_require__(2);
-// var $ = require('./src/js/jquery.min.js')
-__webpack_require__(6);
-__webpack_require__(7);
-// require('./src/sass/komo.scss');
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ }),
-/* 1 */,
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-// var ul = require('./goTop');
-// // document.body.innerHTML = ul;
-// $('body').text(ul);
-// ! function rem() {
-//     let pageWidth = document.documentElement.clientWidth / 16;
-//     let content = "html:{font-size:" + pageWidth + "px}"
-//     console.log(pageWidth * 16);
-//     console.log("one", pageWidth);
-//     let style = document.createElement("style");
-//     style.innerHTML = content;
-//     document.head.appendChild(style);
-// }()
-
-//nav at max-width:467px
-var smallList = $('.smallList');
-var smallBox = $('.smallBox');
-smallList.on('click', function () {
-    smallBox.slideToggle();
-});
-$(window).resize(function () {
-    console.log($(this).width());
-    if ($(this).width() > 467) {
-        smallBox.hide();
-    }
-    carousel.width($(window).width());
-    // ctImg.width($(window).width() * 6)
-    // ctImg.css('left', windowWidth + 'px')
-    // ctImgli.width($(window).width())
-
-    // img.width(windowWidth)
-});
-//carousel 
-var carousel = $('.carousel');
-var ctImg = $('.carousel').find('.ct-img');
-// console.log(ctImg);
-var windowWidth = $(window).width();
-var ctImgli = $('.carousel').find('.ct-img li');
-var img = ctImg.find('img');
-console.log(img);
-// carousel.width($(window).width())
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2712,7 +2632,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return 1 === arguments.length ? this.off(a, "**") : this.off(b, a || "**", c);
         } }), r.holdReady = function (a) {
         a ? r.readyWait++ : r.ready(!0);
-    }, r.isArray = Array.isArray, r.parseJSON = JSON.parse, r.nodeName = B, "function" == "function" && __webpack_require__(5) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+    }, r.isArray = Array.isArray, r.parseJSON = JSON.parse, r.nodeName = B, "function" == "function" && __webpack_require__(3) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
         return r;
     }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -2722,10 +2642,39 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return a.$ === r && (a.$ = Wb), b && a.jQuery === r && (a.jQuery = Vb), r;
     }, b || (a.jQuery = a.$ = r), r;
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
 
 /***/ }),
-/* 4 */
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+var _GoTop = __webpack_require__(4);
+var Carousel = __webpack_require__(5);
+var carousel = new Carousel($('.carousel'));
+carousel.bind();
+// console.dir(carousel.constructor.prototype.bind());
+$(window).resize(function () {
+    // var carousel = new _Carousel.init($('.carousel'));
+    // var carousel = new carousel($('.carousel'));
+    // carousel.prototype.bind();
+    // new _Carousel.init($('.carousel'), windowWidth);
+    // var windowWidth = $(window).width();
+    // console.log("window:", windowWidth);
+    carousel.bind();
+});
+// new _Carousel.init($('.carousel'));
+var index = __webpack_require__(6);
+// var $ = require('./src/js/jquery.min.js')
+__webpack_require__(7);
+__webpack_require__(8);
+// require('./src/sass/komo.scss');
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -2753,7 +2702,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 5 */
+/* 3 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -2762,19 +2711,30 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 6 */
-/***/ (function(module, exports) {
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+
+
+var a = function a(sum) {
+    return sum + 1;
+};
+var ul = "<div class=\"box\">I am a god!</div>";
+// const div = $('<div>hih</div>').appendTo($('body'));
+// $('ul').appendTo($("div"));
+// const addUl = document.body.appendChild(ul);
+// const addUl = document.body.innerHTML = ul;
+// const cc = document.body.innerHTML = ul;
+var I = "hello world!";
+
+module.exports = I; //提供给内部其他的js文件使用的接口
+// module.exports = document.body.innerHTML = ul;
+// module.exports = addUl;
+// module.exports = ul;
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 8 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2871,30 +2831,68 @@ Carousel.prototype.bind = function () {
 };
 
 module.exports = Carousel;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function($) {
 
+// var ul = require('./goTop');
+// // document.body.innerHTML = ul;
+// $('body').text(ul);
+// ! function rem() {
+//     let pageWidth = document.documentElement.clientWidth / 16;
+//     let content = "html:{font-size:" + pageWidth + "px}"
+//     console.log(pageWidth * 16);
+//     console.log("one", pageWidth);
+//     let style = document.createElement("style");
+//     style.innerHTML = content;
+//     document.head.appendChild(style);
+// }()
 
-var a = function a(sum) {
-    return sum + 1;
-};
-var ul = "<div class=\"box\">I am a god!</div>";
-// const div = $('<div>hih</div>').appendTo($('body'));
-// $('ul').appendTo($("div"));
-// const addUl = document.body.appendChild(ul);
-// const addUl = document.body.innerHTML = ul;
-// const cc = document.body.innerHTML = ul;
-var I = "hello world!";
+//nav at max-width:467px
+var smallList = $('.smallList');
+var smallBox = $('.smallBox');
+smallList.on('click', function () {
+    smallBox.slideToggle();
+});
+$(window).resize(function () {
+    console.log($(this).width());
+    if ($(this).width() > 467) {
+        smallBox.hide();
+    }
+    carousel.width($(window).width());
+    // ctImg.width($(window).width() * 6)
+    // ctImg.css('left', windowWidth + 'px')
+    // ctImgli.width($(window).width())
 
-module.exports = I; //提供给内部其他的js文件使用的接口
-// module.exports = document.body.innerHTML = ul;
-// module.exports = addUl;
-// module.exports = ul;
+    // img.width(windowWidth)
+});
+//carousel 
+var carousel = $('.carousel');
+var ctImg = $('.carousel').find('.ct-img');
+// console.log(ctImg);
+var windowWidth = $(window).width();
+var ctImgli = $('.carousel').find('.ct-img li');
+var img = ctImg.find('img');
+console.log(img);
+// carousel.width($(window).width())
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
