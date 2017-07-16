@@ -1,4 +1,4 @@
-const a = (sum) => { return sum + 1 }
+const a = (sum) => { return sum + 1 ,console.log("sum")}
 const ul = `<div class="box">I am a god!</div>`
     // const div = $('<div>hih</div>').appendTo($('body'));
     // $('ul').appendTo($("div"));

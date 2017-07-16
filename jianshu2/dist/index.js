@@ -2718,7 +2718,7 @@ module.exports = __webpack_amd_options__;
 
 
 var a = function a(sum) {
-    return sum + 1;
+    return sum + 1, console.log("sum");
 };
 var ul = "<div class=\"box\">I am a god!</div>";
 // const div = $('<div>hih</div>').appendTo($('body'));
