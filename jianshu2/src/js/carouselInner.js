@@ -1,11 +1,14 @@
-var carouselControlPre = $('.carousel-control-pre');
-var carouselControlNext = $('.carousel-control-next');
+var carouselControlPre = $('.carousel-control.pre');
+var carouselControlNext = $('.carousel-control.next');
 var carouselInner = $('.carousel-inner');
 var isLockUp = false;
 var len = carouselInner.width();
-var item = $('item');
+var item = $('.item');
+carouselInner.width(carouselInner.children().length * len);
 console.log(item);
-carouselControlPre.on('click', function() {
+var index = 0;
+carouselControlNext.on('click', function() {
+    console.log(1);
     event.preventDefault();
     if (isLockUp) {
         return;
@@ -13,6 +16,9 @@ carouselControlPre.on('click', function() {
     isLockUp = true;
     carouselInner.animate({
         left: '+=' + len,
+    }, function() {
+        index++;
+
     })
 
 })

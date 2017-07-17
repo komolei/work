@@ -2651,7 +2651,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var _GoTop = __webpack_require__(4);
+// var _GoTop = require('./src/js/GoTop.js')
+
 var Carousel = __webpack_require__(5);
 var carousel = new Carousel($('.carousel'));
 carousel.bind();
@@ -2712,29 +2713,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var a = function a(sum) {
-    return sum + 1, console.log("sum");
-};
-var ul = "<div class=\"box\">I am a god!</div>";
-// const div = $('<div>hih</div>').appendTo($('body'));
-// $('ul').appendTo($("div"));
-// const addUl = document.body.appendChild(ul);
-// const addUl = document.body.innerHTML = ul;
-// const cc = document.body.innerHTML = ul;
-var I = "hello world!";
-
-module.exports = I; //提供给内部其他的js文件使用的接口
-// module.exports = document.body.innerHTML = ul;
-// module.exports = addUl;
-// module.exports = ul;
-
-/***/ }),
+/* 4 */,
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2883,6 +2862,7 @@ console.log(img);
 
 __webpack_require__(7);
 __webpack_require__(8);
+__webpack_require__(11);
 // carousel.width($(window).width())
 //carousel-inner
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -2973,14 +2953,17 @@ dropList.each(function (index, el) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var carouselControlPre = $('.carousel-control-pre');
-var carouselControlNext = $('.carousel-control-next');
+var carouselControlPre = $('.carousel-control.pre');
+var carouselControlNext = $('.carousel-control.next');
 var carouselInner = $('.carousel-inner');
 var isLockUp = false;
 var len = carouselInner.width();
-var item = $('item');
+var item = $('.item');
+carouselInner.width(carouselInner.children().length * len);
 console.log(item);
-carouselControlPre.on('click', function () {
+var index = 0;
+carouselControlNext.on('click', function () {
+    console.log(1);
     event.preventDefault();
     if (isLockUp) {
         return;
@@ -2988,6 +2971,8 @@ carouselControlPre.on('click', function () {
     isLockUp = true;
     carouselInner.animate({
         left: '+=' + len
+    }, function () {
+        index++;
     });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -3003,6 +2988,44 @@ carouselControlPre.on('click', function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+// const a = (sum) => { return sum + 1, console.log("sum") }
+// const ul = `<div class="box">I am a god!</div>`
+//     // const div = $('<div>hih</div>').appendTo($('body'));
+//     // $('ul').appendTo($("div"));
+//     // const addUl = document.body.appendChild(ul);
+//     // const addUl = document.body.innerHTML = ul;
+//     // const cc = document.body.innerHTML = ul;
+// const I = `hello world!`
+
+
+// module.exports = I; //提供给内部其他的js文件使用的接口
+// // module.exports = document.body.innerHTML = ul;
+// // module.exports = addUl;
+// // module.exports = ul;
+
+var goTop = $('.gotop');
+$(window).scroll(function () {
+    var windowHeight = $(window).scrollTop();
+    if (windowHeight > 500) {
+        goTop.show();
+        goTop.on('click', function () {
+            $(window).scrollTop(0);
+        });
+    } else {
+        goTop.css({
+            display: "none"
+        });
+    }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ })
 /******/ ]);

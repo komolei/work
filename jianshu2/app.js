@@ -1,4 +1,5 @@
-var _GoTop = require('./src/js/GoTop.js')
+// var _GoTop = require('./src/js/GoTop.js')
+
 var Carousel = require('./src/js/Carousel.js')
 var carousel = new Carousel($('.carousel'));
 carousel.bind();

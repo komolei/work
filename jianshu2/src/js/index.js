@@ -40,5 +40,6 @@ console.log(img);
 
 require('./dropList.js')
 require('./carouselInner.js')
-    // carousel.width($(window).width())
-    //carousel-inner
+require('./goTop.js');
+// carousel.width($(window).width())
+//carousel-inner
