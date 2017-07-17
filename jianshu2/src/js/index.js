@@ -37,4 +37,8 @@ var windowWidth = $(window).width();
 var ctImgli = $('.carousel').find('.ct-img li');
 var img = ctImg.find('img');
 console.log(img);
-// carousel.width($(window).width())
+
+require('./dropList.js')
+require('./carouselInner.js')
+    // carousel.width($(window).width())
+    //carousel-inner
