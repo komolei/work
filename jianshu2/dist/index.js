@@ -2653,7 +2653,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 // var _GoTop = require('./src/js/GoTop.js')
 
-var Carousel = __webpack_require__(5);
+var Carousel = __webpack_require__(4);
 var carousel = new Carousel($('.carousel'));
 carousel.bind();
 // console.dir(carousel.constructor.prototype.bind());
@@ -2667,7 +2667,7 @@ $(window).resize(function () {
     carousel.bind();
 });
 // new _Carousel.init($('.carousel'));
-var index = __webpack_require__(6);
+var index = __webpack_require__(5);
 // var $ = require('./src/js/jquery.min.js')
 __webpack_require__(9);
 __webpack_require__(10);
@@ -2713,8 +2713,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2814,7 +2813,7 @@ module.exports = Carousel;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2860,15 +2859,15 @@ var ctImgli = $('.carousel').find('.ct-img li');
 var img = ctImg.find('img');
 console.log(img);
 
+__webpack_require__(6);
 __webpack_require__(7);
 __webpack_require__(8);
-__webpack_require__(11);
 // carousel.width($(window).width())
 //carousel-inner
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2947,7 +2946,7 @@ dropList.each(function (index, el) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2959,9 +2958,20 @@ var carouselInner = $('.carousel-inner');
 var isLockUp = false;
 var len = carouselInner.width();
 var item = $('.item');
+var windowWidth = $(window).width();
+// $(window).resize(function() {
+//     if (windowWidth < 687) {
+//         len = windowWidth;
+//         item.find("img").width(len);
+//         console.log("len", len);
+//         carouselInner.width(carouselInner.children().length * len);
+
+//     }
+// })
 carouselInner.width(carouselInner.children().length * len);
 console.log(item);
 var index = 0;
+// var indexPre = 5;
 carouselControlNext.on('click', function () {
     console.log(1);
     event.preventDefault();
@@ -2969,28 +2979,77 @@ carouselControlNext.on('click', function () {
         return;
     }
     isLockUp = true;
-    carouselInner.animate({
-        left: '+=' + len
-    }, function () {
-        index++;
+    // carouselInner.animate({
+    //     left: '+=' + len,
+    // }, function() {
+    //     index++;
+
+    // })
+
+    // item.eq(index).hide();
+    // console.log(item.eq(index + 1).has(".baner"))
+    // item.eq(index).has(".banner").animate({
+    //         display: "none"
+    //     }, 2000, "linear")
+    item.eq(index).fadeOut(1000, function () {
+        $(this).find(".banner").css({
+            top: "0"
+        });
     });
+    item.eq(index + 1).fadeIn(500);
+    index++;
+    if (index == 7) {
+        index = 0;
+        isLockUp = false;
+    } else {
+        isLockUp = false;
+    }
+    return index;
 });
+carouselControlPre.on('click', function () {
+    console.log(1);
+    event.preventDefault();
+    if (isLockUp) {
+        return;
+    }
+    isLockUp = true;
+    // carouselInner.animate({
+    //     left: '+=' + len,
+    // }, function() {
+    //     index++;
+    // })
+    // item.eq(index).hide();
+    item.eq(index - 1).fadeOut(100);
+    item.eq(index).fadeIn();
+    index--;
+    isLockUp = false;
+    // if (index == 5) {
+    //     index = 0;
+    //     isLockUp = false;
+    // } else {
+    //     isLockUp = false;
+
+    // }
+});
+// var settime = setInterval(function() {
+//     item.eq(index).hide();
+//     item.eq(index + 1).show();
+//     index++;
+//     if (index == 5) {
+//         index = 0;
+//         isLockUp = false;
+
+//     } else {
+//         isLockUp = false;
+//     }
+// }, 1000)
+// carouselInner.on("mouseenter", function() {
+//     clearInterval(settime)
+// })
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 11 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3026,6 +3085,18 @@ $(window).scroll(function () {
     }
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

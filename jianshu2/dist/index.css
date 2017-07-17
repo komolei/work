@@ -204,7 +204,8 @@
     height: 272px;
     margin: 0 auto;
     margin-top: 75px;
-    position: relative; }
+    position: relative;
+    transition: add 1.1s; }
     .carousel-inner:hover > .carousel-control {
       opacity: 1; }
     .carousel-inner .item {
