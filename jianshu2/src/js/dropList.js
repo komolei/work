@@ -24,50 +24,69 @@ var thirdDropList = $('.thirdDropList')
     //     }
 
 // })
+// -------------------------
+
 dropList.each(function(index, el) {
-        var _this = this;
-        var index = index;
-        // console.log(el);
-        $(el).on('mouseover', function(e) {
-            console.log(e.target)
-            if ($(e.target).has("thirdBtn")) {
-                $(e.target).children().show();
-                // thirdBtn.on('mouseleave', function() {
-                //     $(this).children().hide();
-                // })
-            }
-            $(this).children().show();
-
-        })
-        $(el).on('mouseleave', function(e) {
-                // console.log($(this).children(), "gg")
-                // $(this).children().find("thirdDropList").hide();
-                $(this).children().not("span:first-of-type").hide();
-                // if ($(e.target).has("thirdBtn")) {
-                //     $(e.target).children().hide();
-                // }
-                // $(this).children().hide();
-                // console.log(index);
-                // dropListUl.eq(index).css({
-                //     display: 'none'
-                // })
-                thirdDropList.hide();
-
-            })
-            //third DropList
+    var _this = this;
+    var index = index;
+    // console.log(el);
+    $(el).on('mouseover', function(e) {
+        console.log(e.target)
+        if ($(e.target).has("thirdBtn")) {
+            $(e.target).children().show();
+            // thirdBtn.on('mouseleave', function() {
+            //     $(this).children().hide();
+            // })
+        }
+        $(this).children().show();
 
     })
-    // thirdBtn.each(function(index, el) {
-    //         $(el).on('mouseleave', function() {
-    //             $(this).children().hide();
-    //             // $(this).children().not("span:first-of-type").hide();
-    //         })
-    //     })
-    // dropList.on('mouseleave', function(e) {
-    //     // if (e.target.tagName.toLowerCase() == "span") {
+    $(el).on('mouseleave', function(e) {
+            // console.log($(this).children(), "gg")
+            // $(this).children().find("thirdDropList").hide();
+            $(this).children().not("span:first-of-type").hide();
+            // if ($(e.target).has("thirdBtn")) {
+            //     $(e.target).children().hide();
+            // }
+            // $(this).children().hide();
+            // console.log(index);
+            // dropListUl.eq(index).css({
+            //     display: 'none'
+            // })
+            thirdDropList.hide();
+
+        })
+        //third DropList
+
+})
+
+// -------------------------
+// thirdBtn.each(function(index, el) {
+//         $(el).on('mouseleave', function() {
+//             $(this).children().hide();
+//             // $(this).children().not("span:first-of-type").hide();
+//         })
+//     })
+// dropList.on('mouseleave', function(e) {
+//     // if (e.target.tagName.toLowerCase() == "span") {
 
 //     // }
 //     dropListUl.css({
 //         display: "none"
 //     })
 // })
+
+//bigDropList
+var dropList2 = $(".dropList-2");
+console.log(dropList2);
+var bigDropList = $(".bigDropList");
+dropList2.on("mouseover", function() {
+        bigDropList.show();
+    })
+    // dropList2.on("mouseleave", function() {
+    //     bigDropList.hide();
+    // })
+
+bigDropList.on("mouseleave", function() {
+    $(this).hide();
+})

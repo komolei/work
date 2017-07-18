@@ -1,5 +1,5 @@
 // var _GoTop = require('./src/js/GoTop.js')
-
+require('babel-polyfill');
 var Carousel = require('./src/js/Carousel.js')
 var carousel = new Carousel($('.carousel'));
 carousel.bind();

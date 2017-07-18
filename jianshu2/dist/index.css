@@ -129,6 +129,29 @@
     left: 20%; }
   .dropList-3 {
     left: 30%; }
+  .bigDropList {
+    position: fixed;
+    z-index: 3;
+    top: 56px;
+    width: 100%;
+    color: #888;
+    background-color: #fff;
+    display: none;
+    text-align: center; }
+    .bigDropList span {
+      padding-bottom: 5px; }
+    .bigDropList a {
+      text-decoration: none;
+      color: #c8c8c8; }
+    .bigDropList ul {
+      float: left;
+      padding-left: 200px; }
+      .bigDropList ul li {
+        height: 30px;
+        line-height: 30px;
+        border-radius: 4px; }
+        .bigDropList ul li:hover {
+          background: #888; }
   .dropList-4 {
     left: 40%; }
   .dropList-5 {
@@ -205,11 +228,10 @@
     margin: 0 auto;
     margin-top: 75px;
     position: relative;
-    transition: add 1.1s; }
+    transition: all 1.1s; }
     .carousel-inner:hover > .carousel-control {
       opacity: 1; }
     .carousel-inner .item {
-      display: none;
       position: relative;
       transition: left .5s ease-in-out;
       height: 272px; }
@@ -219,18 +241,66 @@
         max-width: 100%;
         height: auto;
         line-height: 1; }
-      .carousel-inner .item .banner:first-child {
-        width: 66.666%; }
-      .carousel-inner .item .banner:nth-child(2) {
-        width: 33.333%;
-        position: relative;
-        transform: translate(200%, -100%); }
-      .carousel-inner .item .banner:nth-child(3) {
-        width: 33.333%;
-        position: relative;
-        transform: translate(200%, -300%); }
+      .carousel-inner .item .banner {
+        display: inline-block; }
+        .carousel-inner .item .banner:first-child {
+          width: 66.666%;
+          float: left; }
+        .carousel-inner .item .banner:nth-child(2) {
+          vertical-align: middle;
+          width: 33.333%;
+          position: relative; }
+        .carousel-inner .item .banner:nth-child(3) {
+          vertical-align: middle;
+          width: 33.333%;
+          position: relative; }
     .carousel-inner .active {
       display: block; }
+      .carousel-inner .active a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+  .carousel-inner2 {
+    overflow: hidden;
+    max-width: 945px;
+    height: 272px;
+    margin: 0 auto;
+    margin-top: 75px;
+    position: relative;
+    transition: all 1.1s; }
+    .carousel-inner2:hover > .carousel-control {
+      opacity: 1; }
+    .carousel-inner2 .carouselLeft {
+      width: 66.66%;
+      height: 272px;
+      float: left;
+      position: relative; }
+      .carousel-inner2 .carouselLeft .item {
+        position: relative;
+        transition: left .5s ease-in-out;
+        height: 272px; }
+        .carousel-inner2 .carouselLeft .item a,
+        .carousel-inner2 .carouselLeft .item img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          line-height: 1; }
+    .carousel-inner2 .carouselRight {
+      position: relative;
+      height: 272px;
+      width: 33.333%;
+      float: right; }
+      .carousel-inner2 .carouselRight img {
+        width: 100%;
+        vertical-align: middle; }
+    .carousel-inner2 .active {
+      display: block; }
+      .carousel-inner2 .active a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%; }
   .carousel-control {
     opacity: 0;
     display: block;
