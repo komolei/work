@@ -10,6 +10,26 @@ li {
     {
         height: 20rem;
     }
+    #search {
+        /* transition: all 1.8s; */
+        width: 15rem;
+    }
+    #search:hover {
+        width: 22rem;
+    }
+}
+
+#signUp {
+    float: right;
+    width: 80px;
+    height: 38px;
+    line-height: 24px;
+    margin: 5px 5px 0 15px;
+    border: 1px solid rgba(236, 97, 73, 0.7);
+    border-radius: 4px;
+    font-size: 15px;
+    color: #ea6f5a;
+    background-color: transparent;
 }
 
 .am-icon-search {
@@ -18,11 +38,8 @@ li {
 }
 
 #search {
-    transition: all 1.8s ease-out;
-}
-
-#search:hover {
-    width: 18rem;
+    transition: all 1.8s;
+    /* width: 15rem; */
 }
 
 .am-control-nav .am-control-thumbs {
@@ -92,6 +109,26 @@ li {
     top: 100%;
     right: 10px;
     transform: translateY(-100%)
+}
+
+#doc-dropdown-justify {
+    line-height: 50px;
+    position: relative;
+}
+
+.am-dropdown {
+    /* min-width: 1000px; */
+}
+
+.am-dropdown-content {
+    margin: 0;
+    width: 400px;
+    position: absolute;
+    z-index: 22;
+}
+
+.am-topbar-form {
+    left: 60%;
 }
 
 

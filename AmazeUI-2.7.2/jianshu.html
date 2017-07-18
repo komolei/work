@@ -45,13 +45,13 @@
         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
         <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-            <ul class="am-nav am-nav-pills am-topbar-nav">
+            <ul class="am-nav am-nav-pills am-topbar-nav ">
                 <li class="am-active"><a href="#">首页</a></li>
                 <li><a href="#">下载</a></li>
                 <li class="am-dropdown" data-am-dropdown>
                     <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
-          下拉 <span class="am-icon-caret-down"></span>
-        </a>
+                       下拉 <span class="am-icon-caret-down"></span>
+                    </a>
                     <ul class="am-dropdown-content">
                         <li class="am-dropdown-header">标题</li>
                         <li><a href="#">1. 去月球</a></li>
@@ -62,6 +62,76 @@
                         <li><a href="#">5. 桥头一回首</a></li>
                     </ul>
                 </li>
+                <!-- 大下拉菜单 -->
+                <li class="am-active ">
+                    <div id="doc-dropdown-justify">
+                        <div class="am-dropdown am-cf" data-am-dropdown="{justify: '#doc-dropdown-justify'}">
+                            <button class="am-btn am-btn-warning am-dropdown-toggle">宽度适应下拉 <span class="am-icon-caret-down"></span></button>
+                            <div class="am-dropdown-content am-text-center " style="min-width:1000px">
+                                <ul class=" am-fl am-u-sm-6 ">
+                                    <span>主体市场</span>
+                                    <a href="">
+                                        <li><span>男装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>女装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>童装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>鞋子</span></li>
+                                    </a>
+                                </ul>
+                                <ul class=" am-fl am-u-sm-6 am-margin-top-0">
+                                    <span>主体市场</span>
+                                    <a href="">
+                                        <li><span>男装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>女装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>童装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>鞋子</span></li>
+                                    </a>
+                                </ul>
+                                <ul class=" am-u-sm-6 am-margin-top-sm">
+                                    <span>主体市场</span>
+                                    <a href="">
+                                        <li><span>男装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>女装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>童装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>鞋子</span></li>
+                                    </a>
+                                </ul>
+                                <ul class=" am-u-sm-6 am-margin-top-sm">
+                                    <span>主体市场</span>
+                                    <a href="">
+                                        <li><span>男装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>女装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>童装</span></li>
+                                    </a>
+                                    <a href="">
+                                        <li><span>鞋子</span></li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
 
             <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
@@ -71,8 +141,8 @@
             </form>
 
             <div class="am-topbar-right">
-                <a class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
-                <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm">注册</button>
+                <!-- <a class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a> -->
+                <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" id="signUp">注册</button>
 
             </div>
         </div>
