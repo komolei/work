@@ -58,13 +58,13 @@ function carouselHeight() {
 
 
     // $(this).one(carousel);
-    // carousel();
+    // carousel();  
 }
 
 carouselHeight();
 $(window).resize(function() {
     carouselHeight();
-    carousel();
+    // carousel();
 });
 carousel();
 
@@ -120,15 +120,12 @@ function carousel() {
             $('.carouselRight').animate({
                 top: '-=' + imgHeight,
             })
-
             isLockUp = false;
         }
         console.log(index)
         return index;
 
     })
-
-
 
     carouselControlPre.on('click', function() {
         event.preventDefault();

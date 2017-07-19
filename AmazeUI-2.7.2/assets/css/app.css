@@ -24,6 +24,22 @@ li {
     .am-collapse {
         min-width: 750px;
     }
+    .carousel-control {
+        opacity: 0;
+        display: block;
+        position: absolute;
+        top: 40%;
+        color: #fff;
+        height: 50px;
+        width: 40px;
+        font-size: 40px;
+        text-align: center;
+        line-height: 46px;
+        background-color: rgba(0, 0, 0, .4);
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        cursor: pointer;
+    }
 }
 
 #signUp {
@@ -219,7 +235,7 @@ footer a {
     overflow: hidden;
     /* max-width: 945px;
     height: 272px; */
-    max-width: 90%;
+    max-width: 65%;
     /* max-height: 455px; */
     /* margin: 0 auto; */
     margin-top: 25px;
@@ -273,23 +289,6 @@ footer a {
     vertical-align: middle;
 }
 
-.carousel-control {
-    opacity: 0;
-    display: block;
-    position: absolute;
-    top: 40%;
-    color: #fff;
-    height: 50px;
-    width: 40px;
-    font-size: 40px;
-    text-align: center;
-    line-height: 46px;
-    background-color: rgba(0, 0, 0, .4);
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    cursor: pointer;
-}
-
 .carousel-control+.next {
     right: 0;
 }
@@ -334,6 +333,22 @@ footer a {
         /* float: none;
         margin: 0 auto; */
     }
+    .carousel-control {
+        opacity: 0;
+        display: block;
+        position: absolute;
+        top: 40%;
+        color: #fff;
+        height: 30px;
+        width: 20px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 28px;
+        background-color: rgba(0, 0, 0, .4);
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        cursor: pointer;
+    }
 }
 
 @media all and (max-width:365px) {
@@ -355,7 +370,7 @@ footer a {
 }
 
 .share-list {
-    display: none;
+    /* display: none; */
     position: absolute;
     transform: translate(38%, -180%);
     z-index: 2;
