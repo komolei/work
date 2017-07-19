@@ -52,26 +52,8 @@ carouselControlNext.on('click', function() {
         isLockUp = false;
 
     } else {
-        // $('.carouselLeft').animate({
-        //         // top: "-=" + itemHight,
-        //         // display: 'none'
-        //     })
-        // $('.carouselLeft').animate({
-        //     top: '-=' + itemHight,
-        // // })
-        // function fade(speed) {
-        //     $(this).css({
-        //         opacity: 0.01 * speed
-        //     })
-        //     if (opacity == 1) {
-        //         $(this).hide();
-        //     }
-        // }
-        // setInterval(function(){
-
-        // })
-
         $('.item').eq(index - 1).fadeOut(500);
+        $(".item").eq(index).fadeIn();
         $('.carouselRight').animate({
             top: '-=' + imgHeight,
         })
@@ -226,12 +208,24 @@ carouselControlPre.on('click', function() {
             return;
         }
         isLockUp = true;
-
-        // $('.item').eq(index - 1).fadeIn(500);
-        // $('.carouselRight').animate({
-        //     top: '+=' + itemHight,
-        // })
+        $(item).eq(index).fadeOut();
         $(item).eq(index - 1).fadeIn();
+
+        $('.carouselRight').animate({
+                top: '+=' + itemHight,
+            }, function() {
+                index--;
+                if (index < 0) {
+                    $('.carouselRight').css({ top: -imgHeight * 3 })
+                    index = item.length - 1;
+                }
+                isLockUp = false;
+            })
+            // $('.item').eq(index - 1).fadeIn(500);
+            // $('.carouselRight').animate({
+            //     top: '+=' + itemHight,
+            // })
+            // console.log(4 - index);
 
         // var speed = 0;
         // setInterval(function() {
@@ -243,45 +237,14 @@ carouselControlPre.on('click', function() {
         //         $('.box').hide();
         //     }
         // }, 1000);
-        if (index == 0) {
-            $('.carouselLeft').css({ top: -itemHight * 3 })
-            $('.carouselRight').css({ top: -imgHeight * 3 })
-            isLockUp = false;
+
+        // if (index == 0) {
+        //     $('.carouselLeft').css({ top: -itemHight * 3 })
+        //     $('.carouselRight').css({ top: -imgHeight * 3 })
+        //     isLockUp = false;
 
 
-        } else if (index == 4) {
-            index = 0;
-            itemIndex = 0;
-            $('.item').each(function() {
-                $(this).css({
-                    display: 'block'
-                })
-            })
-            $('.carouselRight').css({ top: -imgHeight * 3 })
-            $('.carouselLeft').css({
-                top: -itemHight * 3
-            })
-            isLockUp = false;
-
-        } else {
-            var indexx = 4;
-            // $('.item').eq(indexx).fadeOut(500);
-            index--;
-            $('.item').eq(index - 1).fadeIn(500);
-            // $('.carouselLeft').css({
-            //     top: '+=' + itemHight * (index - 1),
-            // })
-            $('.carouselRight').animate({
-                    top: '+=' + itemHight,
-                })
-                // $('.item').eq(index - 1).fadeIn();
-                // $('.carouselRight').animate({
-                //     top: '+=' + imgHeight,
-                // })
-
-            isLockUp = false;
-        }
-        index++;
+        // }
 
 
         // return index;

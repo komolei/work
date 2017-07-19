@@ -278,8 +278,7 @@
       position: relative; }
       .carousel-inner2 .carouselLeft .item {
         position: relative;
-        transition: left .5s ease-in-out;
-        height: 272px; }
+        transition: left .5s ease-in-out; }
         .carousel-inner2 .carouselLeft .item a,
         .carousel-inner2 .carouselLeft .item img {
           display: block;
@@ -288,7 +287,6 @@
           line-height: 1; }
     .carousel-inner2 .carouselRight {
       position: relative;
-      height: 272px;
       width: 33.333%;
       float: right; }
       .carousel-inner2 .carouselRight img {

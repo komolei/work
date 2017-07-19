@@ -46,7 +46,7 @@ Carousel.prototype.bind = function() {
         // this.ctimgli.width(this.len)
     $('.ct-img li').width(_this.len);
     this.img.width(_this.len);
-    this.img.width(_this.len);
+    // this.img.width(_this.len);
     // this.ctimg.width(this.len);
     // console.log(this.carousel.find('img').width(), "gg")
     this.btnnext.click(function() {
