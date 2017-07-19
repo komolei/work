@@ -37,7 +37,8 @@
 </head>
 
 <body>
-    <header class="am-topbar am-topbar-fixed-top ">
+<div class="nav am-topbar-fixed-top am-g am-margin-0 ">
+    <header class="am-topbar  am-sm-10 am-center am-margin-bottom-0">
         <h1 class="am-topbar-brand">
             <a href="#">Amaze UI</a>
         </h1>
@@ -52,7 +53,7 @@
                     <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
                        下拉 <span class="am-icon-caret-down"></span>
                     </a>
-                    <ul class="am-dropdown-content">
+                    <ul class="am-dropdown-content am-text-center">
                         <li class="am-dropdown-header">标题</li>
                         <li><a href="#">1. 去月球</a></li>
                         <li class="am-active"><a href="#">2. 去火星</a></li>
@@ -67,7 +68,7 @@
                     <div id="doc-dropdown-justify">
                         <div class="am-dropdown am-cf" data-am-dropdown="{justify: '#doc-dropdown-justify'}">
                             <button class="am-btn am-btn-warning am-dropdown-toggle">宽度适应下拉 <span class="am-icon-caret-down"></span></button>
-                            <div class="am-dropdown-content am-text-center am-nbfc" style="min-width:1000px">
+                            <div class="am-dropdown-content  am-nbfc" style="min-width:1000px">
                                 <ul class=" am-u-sm-6 ">
                                     <span>主体市场</span>
                                     <a href="">
@@ -147,6 +148,7 @@
             </div>
         </div>
     </header>
+</div>
     <!--轮播-->
     <!-- <div class="am-g am-radius">
         <div class="am-u-sm-8 am-u-md-8 am-u-lg-8 am-u-sm-centered">
@@ -219,10 +221,10 @@
         <a class="next carousel-control">&gt</a>
     </div>
     <!--内容区-->
-    <div class="am-g">
-        <div class="am-u-sm-8 am-u-md-8 am-u-lg-8 am-u-sm-centered am-cf am-fl">
+    <div class="am-g" id="contentContainer">
+        <div class="am-u-sm-12 am-u-md-8 am-u-lg-8 am-u-sm-centered am-cf am-fl am-padding-left-xs">
             <!--左侧内容区-->
-            <div id="container-left" class="am-u-sm-12 am-u-md-8 am-u-lg-8  am-cf am-fl am-list">
+            <div id="container-left" class="am-u-sm-12 am-u-md-12 am-u-lg-8  am-cf am-fl am-list">
                 <ul class="am-list" id="lazyLoad">
                     <!--带图片-->
                     <li class="am-u-sm-12  am-u-md-12 am-u-lg-12">
@@ -482,7 +484,7 @@
     <!--copyright-->
     <div class="am-g " style="padding-top:1rem ">
         <footer>
-            <div class="am-u-sm-8 am-u-md-8 am-u-lg-8 am-u-sm-centered am-cf am-fl am-padding-0 am-margin-bottom-sm">
+            <div class="am-u-sm-12 am-u-md-8 am-u-lg-8 am-u-sm-centered am-cf am-fl am-padding-0 am-margin-bottom-sm">
                 <div class="am-u-sm-12 am-padding-bottom-xs am-text-sm">
                     <a target="_blank " href="# ">关于XX</a><em> · </em><a target="_blank " href="# ">联系我们</a><em> · </em><a target="_blank " href="# ">加入我们</a><em> · </em>
                     <a target="_blank " href="# ">作者成书计划</a><em> · </em><a target="_blank " href="# ">帮助中心</a><em> · </em><a target="_blank " href="# ">合作伙伴</a>

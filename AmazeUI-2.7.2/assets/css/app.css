@@ -6,7 +6,12 @@ li {
     list-style: none;
 }
 
-@media all and (min-width:600px) {
+@media all and (min-width:767px) {
+    .nav header {
+        max-width: 67%;
+        background-color: #fff;
+        border: none;
+    }
     .am-slider img {
         height: 25rem;
     }
@@ -19,7 +24,7 @@ li {
         width: 15rem;
     }
     #search:hover {
-        width: 22rem;
+        width: 20rem;
     }
     .am-collapse {
         min-width: 750px;
@@ -40,6 +45,18 @@ li {
         border-bottom-right-radius: 6px;
         cursor: pointer;
     }
+    #contentContainer {
+        width: 100%;
+    }
+}
+
+.nav {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.am-nav li a::after {
+    display: none;
 }
 
 #signUp {
@@ -213,6 +230,7 @@ li {
     width: 400px;
     position: absolute;
     z-index: 22;
+    text-align: right;
 }
 
 .am-topbar-form {
@@ -296,7 +314,12 @@ footer a {
 
 /*author*/
 
-@media all and (min-width:365px) and (max-width:600px) {
+@media all and (min-width:414px) and (max-width:767px) {
+    .nav header {
+        width: 750px;
+        background-color: #fff;
+        border: none;
+    }
     .share {
         text-align: center;
     }
@@ -349,9 +372,33 @@ footer a {
         border-bottom-right-radius: 6px;
         cursor: pointer;
     }
+    .am-icon-search {
+        display: none;
+    }
+    .am-dropdown-content {
+        text-align: center;
+    }
+    .carousel-inner2 {
+        max-width: 95%;
+    }
+    .container-box {
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+    #container-right {
+        padding: 0;
+    }
+    .recommend {
+        display: none;
+    }
 }
 
-@media all and (max-width:365px) {
+@media all and (max-width:414px) {
+    .nav header {
+        width: 100%;
+        background-color: #fff;
+        border: none;
+    }
     .share {
         text-align: center;
     }
@@ -362,6 +409,25 @@ footer a {
     }
     .comments {
         padding-top: 10rem;
+    }
+    .carousel-inner2 {
+        max-width: 95%;
+    }
+    .container-box {
+        padding-top: 1rem;
+        margin-left: 0;
+    }
+    .am-icon-search {
+        display: none;
+    }
+    .am-dropdown-content {
+        text-align: center;
+    }
+    #container-right {
+        padding: 0;
+    }
+    .recommend {
+        display: none;
     }
 }
 
