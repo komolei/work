@@ -1,13 +1,13 @@
-(function ($) {
+(function($) {
     'use strict';
 
-    $(function () {
+    $(function() {
         var $fullText = $('.admin-fullText');
-        $('#admin-fullscreen').on('click', function () {
+        $('#admin-fullscreen').on('click', function() {
             $.AMUI.fullscreen.toggle();
         });
 
-        $(document).on($.AMUI.fullscreen.raw.fullscreenchange, function () {
+        $(document).on($.AMUI.fullscreen.raw.fullscreenchange, function() {
             $fullText.text($.AMUI.fullscreen.isFullscreen ? '退出全屏' : '开启全屏');
         });
     });
@@ -24,12 +24,12 @@ function textMiddle() {
     // console.log($(this).width())
 
     if ($(this).width() > 960) {
-        addHeight.each(function () {
+        addHeight.each(function() {
             $(this).addClass("am-margin-top-sm")
         })
 
     } else {
-        addHeight.each(function () {
+        addHeight.each(function() {
             $(this).removeClass("am-margin-top-sm")
         })
     }
@@ -39,18 +39,71 @@ textMiddle();
 // $(window).load(textMiddle)
 $(window).resize(textMiddle);
 
-$(window).resize(function () {
+//相关css调整
+! function() {
     var windowWidth = $(window).width();
-    if ( windowWidth < 767) {
-        $("#contentContainer > div")
-        .css("width","100%")
+
+    if (windowWidth < 632) {
+        // $(".nav header").css("maxWidth", "100%")
+        $("#erweima").css("width", "50%", "float", "left")
+        $("#erweima1").css("width", "50%");
+        // $("#")
+
+    } else {
+        $("#erweima").css("width", "100%")
+        $("#erweima1").css("width", "100%");
     }
-    else{
-           $("#contentContainer > div")
-        .css("width","66.6667%")
-    }
-})
-//carousel 
+
+}()
+
+$(window).resize(function() {
+        var windowWidth = $(window).width();
+        if (windowWidth < 767) {
+            $("#contentContainer > div")
+                .css("width", "100%")
+        } else {
+            $("#contentContainer > div")
+                .css("width", "66.6667%")
+
+            // $(".am-collapse").css()
+        }
+        if (windowWidth < 1024) {
+            $(".nav header").css("maxWidth", "100%")
+            $(".am-topbar-right").css({ display: "none" })
+                // $("#container-right").css({ display: "none" })
+        } else {
+            $(".nav header").css("maxWidth", "66.6667%")
+            $(".am-topbar-right").css({ display: "block" })
+                // $("#container-right").css({ display: "block" })
+
+        }
+        if (windowWidth > 632 && windowWidth < 750) {
+            // $(".nav header").css("maxWidth", "100%")
+            $(".am-topbar-right").css({ display: "none" })
+
+        } else {
+            // $(".nav header").css("maxWidth", "66.6667%")
+            $(".am-topbar-right").css({ display: "block" })
+
+        }
+        if (windowWidth < 687) {
+            $("#signUp").css("margin", "0 auto")
+        } else {
+            $("#signUp").css("margin", "5px 5px 0 15px;")
+
+        }
+        if (windowWidth < 632) {
+            // $(".nav header").css("maxWidth", "100%")
+            $("#erweima").css("width", "50%", "float", "left")
+            $("#erweima1").css("width", "50%");
+            // $("#")
+
+        } else {
+            $("#erweima").css("width", "100%")
+            $("#erweima1").css("width", "100%");
+        }
+    })
+    //carousel 
 
 //得到高度
 function carouselHeight() {
@@ -60,9 +113,9 @@ function carouselHeight() {
     var banner = $('.item >.banner')
 
     carouselInner.css({
-        height: itemHight,
-    })
-    // console.log("width", carouselInner.css("width"), ",height", windowWidth);
+            height: itemHight,
+        })
+        // console.log("width", carouselInner.css("width"), ",height", windowWidth);
     var len = carouselInner.width();
     // console.log("len::", len);
     carouselInner.width(carouselInner.children().length * len);
@@ -74,7 +127,7 @@ function carouselHeight() {
 }
 
 carouselHeight();
-$(window).resize(function () {
+$(window).resize(function() {
     carouselHeight();
     // carousel();
 });
@@ -91,7 +144,7 @@ function carousel() {
     var windowWidth = $(window).width();
     var itemHight = $('.item').height();
     var banner = $('.item >.banner')
-    // var imgHeight = $(".item .banner").height();
+        // var imgHeight = $(".item .banner").height();
     var len = carouselInner.width();
     carouselInner.width(carouselInner.children().length * len);
     var imgHeight = carouselInner.height();
@@ -103,7 +156,7 @@ function carousel() {
     // var indexPre = 5;
     var index = 0;
     var itemIndex = 0;
-    carouselControlNext.on('click', function () {
+    carouselControlNext.on('click', function() {
         // console.log(1);
         event.preventDefault();
         if (isLockUp) {
@@ -116,7 +169,7 @@ function carousel() {
         if (index == 4) {
             index = 0;
             itemIndex = 0;
-            $('.item').each(function () {
+            $('.item').each(function() {
                 $(this).css({
                     display: 'block'
                 })
@@ -139,7 +192,7 @@ function carousel() {
 
     })
 
-    carouselControlPre.on('click', function () {
+    carouselControlPre.on('click', function() {
         event.preventDefault();
         if (isLockUp) {
             return;
@@ -150,7 +203,7 @@ function carousel() {
 
         $('.carouselRight').animate({
             top: '+=' + itemHight,
-        }, function () {
+        }, function() {
             index--;
             if (index < 0) {
                 $('.carouselRight').css({ top: -imgHeight * 3 })
@@ -184,7 +237,7 @@ function show() {
         dataType: 'json',
         type: 'get',
         data: '',
-    }).done(function (data) {
+    }).done(function(data) {
         console.log(data);
         var div = $('<div class="container-box">' +
             '<a href=' + data.link + ' class="am-inline" id="photo-a">' + '<img src=' + data.link + ' alt="" style="width:32px;height:32px;border-radius:50%"></a>' +
@@ -212,67 +265,67 @@ function show() {
             '</span>' +
             '</div>');
         var add = $('<div>' + data.date + '</div>')
-        // console.log(data.date);
+            // console.log(data.date);
         $("#lazyLoad").append(add);
-    }).fail(function (error) {
+    }).fail(function(error) {
         console.log(error)
     })
 }
-$('#lazyLoad>li').each(function () {
-    if (isVisible($(this))) {
-        show($(this))
-    }
-})
-// ajax
-$('#ajax').on('click', function () {
+$('#lazyLoad>li').each(function() {
+        if (isVisible($(this))) {
+            show($(this))
+        }
+    })
+    // ajax
+$('#ajax').on('click', function() {
     $.ajax({
         url: "",
         dataType: 'json',
         type: 'get',
         data: '',
-    }).done(function (data) {
+    }).done(function(data) {
         var results = data; //数组形式
         for (var key in results) {
-            key.foreach(function (element) {
-                var li = $('<li class="am-u-sm-12  am-u-md-12 am-u-lg-12">' + '<div class="container-box">' +
-                    '<a href=' + JSON.stringify(element.link) + ' class="am-inline" id="photo-a">' + '<img src=' + JSON.stringify(element.link) + ' alt="" style="width:32px;height:32px;border-radius:50%"></a>' +
-                    '<span class="am-text-sm am-margin-right-sm">' + JSON.stringify(element.author) + '</span><span class="am-link-muted am-text-sm">' + JSON.stringify(element.time) + '</span>' +
-                    '<a href=' + JSON.stringify(element.link) + ' class="am-text-primary am-link-muted am-text-lg am-block" style="padding:.4rem 0">' + JSON.stringify(element.link) + '</a>' +
-                    '<ul class="am-g am-padding-0">' +
-                    '<li class="am-u-sm-8 " id="addHeight">' +
-                    '<p class="line-clamp" style="padding:0">' +
-                    JSON.stringify(element.text) +
-                    '</p>' +
-                    '</li>' +
-                    '<li class="am-u-sm-3 am-thumbnail">' + '<img class="am-thumbnail" src=' + JSON.stringify(element.link) + ' alt="">' + '</li>' +
-                    '</ul>' +
-                    '<div class="meta">' +
-                    '<a class="am-btn-danger am-radius" target="_blank" href=' + JSON.stringify(element.link) + '>' + JSON.stringify(element.iconText) + '</a>' +
-                    '<a target="_blank" href=' + JSON.stringify(element.link) + '>' +
-                    '<span class="am-icon-eye"> ' + JSON.stringify(element.watchNumber) + '</span>' +
-                    '</a>' +
-                    '<a target="_blank" href=' + JSON.stringify(element.link) + '>' +
-                    '<span class="am-icon-comment">' +
-                    JSON.stringify(element.commetNumber) + '</span>' +
-                    '</a>' + '<span class="am-icon-heart">' +
-                    JSON.stringify(element.likeNumber) + '</span>' +
-                    '<span class="am-icon-jpy">' +
-                    JSON.stringify(element.loveNumber) + '</span>' +
-                    '</div>' +
-                    '</div>' +
-                    '</li>')
-                $('#ajax').prepend(li);
-            },
+            key.foreach(function(element) {
+                    var li = $('<li class="am-u-sm-12  am-u-md-12 am-u-lg-12">' + '<div class="container-box">' +
+                        '<a href=' + JSON.stringify(element.link) + ' class="am-inline" id="photo-a">' + '<img src=' + JSON.stringify(element.link) + ' alt="" style="width:32px;height:32px;border-radius:50%"></a>' +
+                        '<span class="am-text-sm am-margin-right-sm">' + JSON.stringify(element.author) + '</span><span class="am-link-muted am-text-sm">' + JSON.stringify(element.time) + '</span>' +
+                        '<a href=' + JSON.stringify(element.link) + ' class="am-text-primary am-link-muted am-text-lg am-block" style="padding:.4rem 0">' + JSON.stringify(element.link) + '</a>' +
+                        '<ul class="am-g am-padding-0">' +
+                        '<li class="am-u-sm-8 " id="addHeight">' +
+                        '<p class="line-clamp" style="padding:0">' +
+                        JSON.stringify(element.text) +
+                        '</p>' +
+                        '</li>' +
+                        '<li class="am-u-sm-3 am-thumbnail">' + '<img class="am-thumbnail" src=' + JSON.stringify(element.link) + ' alt="">' + '</li>' +
+                        '</ul>' +
+                        '<div class="meta">' +
+                        '<a class="am-btn-danger am-radius" target="_blank" href=' + JSON.stringify(element.link) + '>' + JSON.stringify(element.iconText) + '</a>' +
+                        '<a target="_blank" href=' + JSON.stringify(element.link) + '>' +
+                        '<span class="am-icon-eye"> ' + JSON.stringify(element.watchNumber) + '</span>' +
+                        '</a>' +
+                        '<a target="_blank" href=' + JSON.stringify(element.link) + '>' +
+                        '<span class="am-icon-comment">' +
+                        JSON.stringify(element.commetNumber) + '</span>' +
+                        '</a>' + '<span class="am-icon-heart">' +
+                        JSON.stringify(element.likeNumber) + '</span>' +
+                        '<span class="am-icon-jpy">' +
+                        JSON.stringify(element.loveNumber) + '</span>' +
+                        '</div>' +
+                        '</div>' +
+                        '</li>')
+                    $('#ajax').prepend(li);
+                },
                 this);
         }
 
-    }).fail(function (error) {
+    }).fail(function(error) {
         console.log(error)
     })
 })
 
 //goTop
-$('#goTop').on('mouseover', function () {
+$('#goTop').on('mouseover', function() {
 
 })
 
@@ -282,7 +335,7 @@ var containerRight = $('#container-right');
 
 function cancel() {
     if ($(this).width() < 640) {
-        containerRight.css({ display: "none" });
+        // containerRight.css({ display: "none" });
         containerLeft.removeClass("am-u-sm-8 am-u-md-8 am-u-lg-8");
         containerLeft.addClass("am-u-sm-12 am-u-md-12 am-u-lg-12");
 
@@ -305,7 +358,7 @@ function dataUse(data) {
     var ul = $('<ul class="am-padding-0"></ul>');
     var recommendOfAuthor = $('#recommendOfAuthor');
     var containerOfAuthor = $('.containerOfAuthor');
-    $(data).each(function (index) {
+    $(data).each(function(index) {
         var li = $(
             '<li>' +
             '<ul class="am-cf containerOfAuthor-ul am-padding-0 am-u-sm-12">' +
@@ -332,7 +385,7 @@ function dataUse(data) {
     })
     containerOfAuthor.html(ul); //有可能有慢。。
 };
-$('.lt').on('click', function () {
+$('.lt').on('click', function() {
     if (i <= 1) {
         return
     }
@@ -343,16 +396,16 @@ $('.lt').on('click', function () {
         dataType: "json",
         type: 'get',
         data: "",
-        success: function (data) {
+        success: function(data) {
             dataUse(data);
         },
-        error: function (error) {
+        error: function(error) {
             console.log(error)
         }
     })
 
 });
-$('.gt').on('click', function () {
+$('.gt').on('click', function() {
 
     number.text(++i);
     // console.log("I:", i);
@@ -361,11 +414,11 @@ $('.gt').on('click', function () {
         dataType: 'json',
         type: 'get',
         data: '',
-        success: function (data) {
+        success: function(data) {
             // console.log(data);
             dataUse(data);
         },
-        error: function (error) {
+        error: function(error) {
             console.log(error)
         }
     })
@@ -376,14 +429,19 @@ $('.gt').on('click', function () {
 // share more
 var shareMore = $('#shareMore');
 var shareList = $('.share-list');
-shareMore.on('click', function () {
+shareMore.on('click', function() {
     shareList.css({ display: "block" })
-    // var time=setTimeout(function() {
-    //     shareList.css({ display: "none" })
-    // }, 2000);
-
-
+        // var time=setTimeout(function() {
+        //     shareList.css({ display: "none" })
+        // }, 2000);
 });
+shareList.on("mouseleave", function() {
+    $(this).hide();
+})
+shareList.on("touchend", function() {
+    $(this).hide();
+})
+
 // shareMore.on('mouseleave', function() {
 //         shareList.css({ display: "none" })
 
