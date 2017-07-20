@@ -526,7 +526,7 @@ footer a {
 }
 
 .share-list {
-    /* display: none; */
+    display: none;
     position: absolute;
     transform: translate(38%, -180%);
     z-index: 2;
@@ -561,4 +561,24 @@ footer a {
 
 .description {
     color: #333;
+}
+
+#share {
+    padding: 1rem 0;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
+#list-share a {
+    font-size: 0.6rem;
+}
+
+#list-share .am-icon-btn {
+    width: 28px;
+    height: 28px;
+    line-height: 33px;
+}
+
+#list-share ul {
+    transform: translate(38%, -162%);
 }
