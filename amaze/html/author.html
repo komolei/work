@@ -1,0 +1,305 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Amaze UI</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+    <div class="nav am-topbar-fixed-top am-g am-margin-0 ">
+        <header class="am-topbar  am-sm-10 am-center am-margin-bottom-0">
+            <h1 class="am-topbar-brand">
+                <a href="#">Amaze UI</a>
+            </h1>
+
+            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-primary am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+            <div class="am-collapse am-topbar-collapse " id="doc-topbar-collapse">
+                <ul class="am-nav am-nav-pills am-topbar-nav ">
+                    <li class="am-active"><a href="#">首页</a></li>
+                    <li><a href="#">下载</a></li>
+                    <li class="am-dropdown" data-am-dropdown>
+                        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        下拉 <span class="am-icon-caret-down"></span> 
+                    </a>
+                        <ul class="am-dropdown-content am-text-left">
+                            <li class="am-dropdown-header">标题</li>
+                            <li><a href="#">1. 去月球</a></li>
+                            <li class="am-active"><a href="#">2. 去火星</a></li>
+                            <li><a href="#">3. 还是回地球</a></li>
+                            <li class="am-disabled"><a href="#">4. 下地狱</a></li>
+                            <li class="am-divider"></li>
+                            <li><a href="#">5. 桥头一回首</a></li>
+                        </ul>
+                    </li>
+                    <!-- 大下拉菜单 -->
+                    <li class="am-active ">
+                        <div id="doc-dropdown-justify">
+                            <div class="am-dropdown am-cf" data-am-dropdown="{justify: '#doc-dropdown-justify'}">
+                                <button class="am-btn  am-dropdown-toggle" id="bigDropBtn">大菜单
+                                     <span class="am-icon-caret-down"></span> 
+                                </button>
+                                <div class="am-dropdown-content  am-nbfc" style="min-width:1000px">
+                                    <ul class=" am-u-sm-6 ">
+                                        <span>主体市场</span>
+                                        <a href="">
+                                            <li><span>男装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>女装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>童装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>鞋子</span></li>
+                                        </a>
+                                    </ul>
+                                    <ul class="  am-u-sm-6 am-margin-top-0">
+                                        <span>主体市场</span>
+                                        <a href="">
+                                            <li><span>男装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>女装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>童装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>鞋子</span></li>
+                                        </a>
+                                    </ul>
+                                    <ul class=" am-u-sm-6 am-margin-top-sm">
+                                        <span>主体市场</span>
+                                        <a href="">
+                                            <li><span>男装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>女装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>童装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>鞋子</span></li>
+                                        </a>
+                                    </ul>
+                                    <ul class=" am-u-sm-6 am-margin-top-sm">
+                                        <span>主体市场</span>
+                                        <a href="">
+                                            <li><span>男装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>女装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>童装</span></li>
+                                        </a>
+                                        <a href="">
+                                            <li><span>鞋子</span></li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+                    <div class="am-form-group">
+                        <input type="text" id="search" class="am-form-field am-input-sm am-round" placeholder="搜索"><i class="am-icon-search am-icon-fw"></i>
+                    </div>
+                </form>
+
+                <!-- <div class="am-topbar-right">
+                     <a class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a> 
+                <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" id="signUp">注册</button>
+
+            </div>  -->
+            </div>
+        </header>
+    </div>
+
+    <div class="am-u-sm-12 am-u-sm-centered am-u-md-12 am-u-lg-8">
+        <h1 class="am-text-center">别怪他人太冷漠，每个人都有自己的不容易</h1>
+        <!--作者信息-->
+        <!--<div class="author am-g">
+            <a class="am-u-sm-1" href="#">
+                <img src="http://upload.jianshu.io/users/upload_avatars/6126137/e83c6b36-be36-4308-8ff4-41c32fc26705?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144" alt="144" style="width:4rem;height:4rem">
+            </a>
+            <div class="info am-u-sm-11">
+                <span class="am-radius" style="border:1px solid #ea6f5a;color:#ea6f5a">作者</span>
+                <span class=""><a href="#">槽值</a></span>
+                <a class="am-btn am-btn-success am-round am-padding-0 am-text-xs"><span class="am-icon-plus"></i><span>关注</span></a>
+                <div class="meta am-text-sm am-link-muted">
+                    <span class="publish-time">2017.07.11 13:17</span>
+                    <span class="wordage">字数 3415</span>
+                    <span class="views-count">阅读 757</span><span class="comments-count">评论 6</span><span class="likes-count">喜欢 32</span><span class="rewards-count ">赞赏 1</span></div>
+            </div>
+ 
+        </div>-->
+        <!--文本内容-->
+        <div class="am-g">
+            <div class="content am-u-sm-12 am-u-sm-centered am-text-left am-padding-0" id="authorContent">
+                <p class="">
+                    长大之后，我们哭的权利就被剥夺了。 初涉职场那段时间，我的生活几乎是一团糟。 工作不顺、朋友寥寥、经济拮据。 生日的那一天，我正好是生理期，因为业务生疏又加班到十点。 回到出租屋时我已经疼到满头虚汗、意识模糊。 草草洗漱之后我瘫软在床上，隔壁的男生在打游戏，情绪激动，键盘敲得噼里啪啦。 我拿起手机发了条朋友圈：今年的生日特别充实，耶！ 五分钟后，隔壁的男生骂了一句脏话，朋友圈多了20个赞。 那一年我已经学会怎么红着眼睛装开心。因为抱怨的潜台词是：问题不是出在我身上。 大多数的怀才不遇，都是一厢情愿的自怨自艾。
+                    其实这种情况非常常见，当碰到烦心事时，
+                    <p>有些人总倾向于将责任推到他们或者不可抗拒的环境上。 这种心理叫受害者心态。 拒绝面对现实、责怪他人、自我欺骗，这些都是受害者心态的典型表现。 而这样做的后果就是，被抱怨的黑雾遮蔽双眼、迷惑心智、阻碍成长，最终在自怨自艾的的泥沼中越陷越深。 成年人的世界里有一个非常重要的标准：只要你想得到什么，都是有代价的。 张泉灵曾说过一个生动的比喻：你拿两块钱去买了一个苹果，苹果很好吃，你很喜欢，但你的钱包里一定会少两块钱。 你不能一边吃着苹果，一边抱怨钱包里少了两块钱。
+                    </p>
+                </p>
+            </div>
+        </div>
+        <!--作者信息加关注-->
+        <!--分享-->
+        <div class="share am-avg-sm-2 am-margin-bottom-lg">
+            <div class="share-left am-vertical-align am-inline-block">
+                <a href="#" class="am-btn am-btn-danger am-round"> <span class="am-icon-heart am-margin-right-2 am-vertical-align-middle">　喜欢</span><span class="am-vertical-align-middle">　|　</span><span class="am-vertical-align-middle">36</span></a>
+            </div>
+            <div class="share-right am-inline-block am-fr am-cf">
+                <a href="#" class="am-btn am-padding-0"> <span class="am-icon-weixin  am-icon-btn am-round am-success"> </span></a>
+                <a href="#" class="am-btn am-padding-0"> <span class="am-icon-weibo  am-icon-btn am-round am-primary"> </span></a>
+                <a id="shareMore" href="javascript:void(0)" class="am-btn am-btn-danger am-round ">
+                    <span>更多分享</span>
+
+
+                </a>
+                <ul class="share-list am-padding-sm " id="share-list">
+                    <li>
+                        <a href="#">
+                            <span class="am-icon-qq"></span><span>分享到QQ空间</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="am-icon-twitter"></span><span>分享到Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="am-icon-google"></span><span>分享到Google+</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- UY BEGIN -->
+        <div id="uyan_frame"></div>
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2139481"></script>
+        <!-- UY END -->
+        <!-- 自己使用的评论框 -->
+        <div class="comments am-padding-top-sm" style="display:none">
+            <ul class="am-comment-list am-padding-0 am-margin-top-sm ">
+                <li class="am-comment am-margin-top-sm">
+                    <article class="am-comment">
+                        <!-- 评论容器 -->
+                        <a href="">
+                            <img class="am-comment-avatar" alt="" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" />
+                            <!-- 评论者头像 -->
+                        </a>
+
+                        <div class="am-comment-main">
+                            <!-- 评论内容容器 -->
+                            <header class="am-comment-hd">
+                                <!--<h3 class="am-comment-title">评论标题</h3>-->
+                                <div class="am-comment-meta">
+                                    <!-- 评论元数据 -->
+                                    <a href="#link-to-user" class="am-comment-author">..</a>
+                                    <!-- 评论者 -->
+                                    评论于 <time datetime="">...</time>
+                                </div>
+                            </header>
+
+                            <div class="am-comment-bd">..ddddddd.</div>
+                            <!-- 评论内容 -->
+                            <div class="icon"><span class="am-icon-thumbs-o-up am-inline-block am-padding-xs"></span><span>赞</span><span class="am-icon-commenting-o am-padding-xs"></span><span>回复</span></div>
+                        </div>
+
+                    </article>
+                </li>
+                <li class="am-comment am-margin-top-sm">
+                    <article class="am-comment">
+                        <!-- 评论容器 -->
+                        <a href="">
+                            <img class="am-comment-avatar" alt="" src="http://s.amazeui.org/media/i/demos/bw-2014-06-19.jpg?imageView/1/w/96/h/96" />
+                            <!-- 评论者头像 -->
+                        </a>
+
+                        <div class="am-comment-main">
+                            <!-- 评论内容容器 -->
+                            <header class="am-comment-hd">
+                                <!--<h3 class="am-comment-title">评论标题</h3>-->
+                                <div class="am-comment-meta">
+                                    <!-- 评论元数据 -->
+                                    <a href="#link-to-user" class="am-comment-author">..</a>
+                                    <!-- 评论者 -->
+                                    评论于 <time datetime="">...</time>
+                                </div>
+                            </header>
+
+                            <div class="am-comment-bd">..ddddddd.</div>
+                            <!-- 评论内容 -->
+                            <div class="icon"><span class="am-icon-thumbs-o-up am-inline-block am-padding-xs"></span><span>赞</span><span class="am-icon-commenting-o am-padding-xs"></span><span>回复</span></div>
+                        </div>
+
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <!-- 自己使用的评论框 -->
+
+    </div>
+
+    <button data-am-smooth-scroll class="am-btn am-btn-primary am-icon-chevron-up am-fr am-btn-sm" id="goTop"></button>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/app.js "></script>
+    <script id="__bs_script__">
+        //<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+        //]]>
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>
