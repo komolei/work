@@ -5,6 +5,7 @@
 .am-topbar {
     position: relative;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     border: none;
     background-color: #fff;
@@ -235,6 +236,7 @@ footer a {
     position: fixed;
     top: 100%;
     right: 10px;
+    -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     background-color: #fff;
     border: 1px solid #dedede;
@@ -251,6 +253,7 @@ footer a {
     margin-top: 25px;
     margin-bottom: 25px;
     position: relative;
+    -webkit-transition: width .5s;
     transition: width .5s;
     box-sizing: border-box;
     border-radius: 4px;
@@ -267,6 +270,7 @@ footer a {
 
 .item {
     position: relative;
+    -webkit-transition: left .5s ease-in-out;
     transition: left .5s ease-in-out;
 }
 
