@@ -59,6 +59,36 @@ li {
     /* padding: 0 */
 }
 
+#photo-a,
+#photo-a img {
+    width: 48px;
+    height: 48px;
+}
+
+.guanzhu {
+    padding: 1px 7px 1px 5px;
+    font-size: 13px;
+    border-color: #42c02e;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 40px;
+    color: #fff;
+    background-color: #42c02e;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    margin-left: 4px;
+}
+
+.am-icon-plus {
+    padding-right: 4px;
+}
+
 
 /* li的img的css */
 
@@ -266,6 +296,11 @@ footer a {
 .carouselLeft {
     float: left;
     position: relative;
+    display: inline-block;
+}
+
+.carouselRight {
+    display: inline-block;
 }
 
 .item {

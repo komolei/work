@@ -71,9 +71,10 @@ function carousel() {
     // var indexPre = 5;
     var index = 0;
     var itemIndex = 0;
-    carouselControlNext.on('click', function() {
-        // console.log(1);
-        event.preventDefault();
+    carouselControlNext.on('click', function(e) {
+        // var event = event;
+        console.log(1);
+        e.preventDefault();
         if (isLockUp) {
             return;
         }
@@ -107,8 +108,9 @@ function carousel() {
 
     })
 
-    carouselControlPre.on('click', function() {
-        event.preventDefault();
+    carouselControlPre.on('click', function(e) {
+        // var event = event;
+        e.preventDefault();
         if (isLockUp) {
             return;
         }
