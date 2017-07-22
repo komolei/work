@@ -1,7 +1,33 @@
 // 顶部nav
-.fix-nav {
-    border: 1px solid #653333;
-    height: 222px;
-    transform: translateX(12px);
-    transition: all 2s;
+// .fix-nav {
+//     // border: 1px solid #653333;
+//     height: 31px;
+// }
+* {
+    font-family: Microsoft YaHei, "Times New Roman";
+    font-size: 14px;
+}
+
+.fix-nav-container {
+    background-color: #ebebeb;
+    height: 31px;
+    line-height: 31px;
+    .fix-nav {
+        // width: 1400px;
+        padding: 0 100px;
+    }
+    .fix-nav-left {
+        .icon {
+            display: inline-block;
+            width: 31px;
+            height: 31px;
+            // background-color: #deb465;
+            // background-image: url("./icon.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+        span {
+            line-height: 31px;
+        }
+    }
 }
