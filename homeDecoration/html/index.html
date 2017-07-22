@@ -1,0 +1,496 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hello Amaze UI</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css">
+    <!-- <link rel="stylesheet" href="../assets/css/app.css"> -->
+    <!-- <link rel="stylesheet" href="../assets/css/jianshu.css"> -->
+    <link rel="stylesheet" href="../assets/css/decoration.css">
+    <link rel="stylesheet" href="../dist/index.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="fix-nav am-g">
+        <div class="fix-nav-container am-u-sm-12 am-u-md-8 am-u-sm-8">
+            dd
+        </div>
+    </div>
+    <div class="nav am-topbar am-margin-0 ">
+
+        <header class="am-topbar am-u-sm-12 am-u-md-8 am-u-lg-8 am-u-sm-offset-2 am-center am-margin-bottom-0 am-padding-0">
+            <h1 class="am-topbar-brand am-padding-0">
+                <a href="#"><img class="am-padding-left-0 " src="../img/logo.jpg" alt="" id="logo" class="am-round"></a>
+            </h1>
+            <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-primary am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+            <div class="am-collapse am-topbar-collapse am-sm-8" id="doc-topbar-collapse">
+                <ul class="am-nav am-nav-pills am-topbar-nav ">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">下载</a></li>
+                    <li class="am-dropdown">
+                        <a href="#">菜单</a>
+                    </li>
+
+                    <li class=" ">
+                        <a href="#">菜单</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- 轮播 -->
+    <!-- <div class="carousel-inner2  am-center">
+        <div class="carouselLeft am-u-sm-8 am-padding-0 ">
+            <div class="item">
+                <div class="banner ">
+                    <a target="_blank" href="http://www.jianshu.com/p/dd91f4fc9a94?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3255/3d0f2ee5e0dc405e02426d43299cb354b54ab625.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a target="_blank" href="http://www.jianshu.com/p/6fe482032ee2?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3248/b5270fefcdc34d8e0425f0b02ba5c18a7d72ed80.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a target="_blank" href="http://www.jianshu.com/p/e151c9bc792f?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3260/9d6683015e263867bad57d73343bdb6f0a8fa640.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner">
+                    <a target="_blank" href="http://www.jianshu.com/p/584c65f42140?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3247/69fffc8bc22c6b8cb1a3dbb7f33b6db3cca250cb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carouselRight am-u-sm-4 am-padding-0 ">
+            <div class="banner ">
+                <a target="_blank" href="http://www.jianshu.com/p/6fe482032ee2?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3248/b5270fefcdc34d8e0425f0b02ba5c18a7d72ed80.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+            <div class="banner">
+                <a target="_blank" href="http://www.jianshu.com/p/e151c9bc792f?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3260/9d6683015e263867bad57d73343bdb6f0a8fa640.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+            <div class="banner">
+                <a target="_blank" href="http://www.jianshu.com/p/e151c9bc792f?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3260/9d6683015e263867bad57d73343bdb6f0a8fa640.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+            <div class="banner">
+                <a target="_blank" href="http://www.jianshu.com/p/584c65f42140?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3247/69fffc8bc22c6b8cb1a3dbb7f33b6db3cca250cb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+            <div class="banner">
+                <a target="_blank" href="http://www.jianshu.com/p/584c65f42140?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3247/69fffc8bc22c6b8cb1a3dbb7f33b6db3cca250cb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+            <div class="banner">
+                <a target="_blank" href="http://www.jianshu.com/p/167c53393a27?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3267/91ac030757e86fc35222011ebca840a93f5bd135.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+            <div class="banner">
+                <a target="_blank" href="http://www.jianshu.com/p/167c53393a27?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3267/91ac030757e86fc35222011ebca840a93f5bd135.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+            <div class="banner">
+                <a target="_blank" href="http://www.jianshu.com/p/b75a8400b9c0?utm_medium=index-banner&amp;utm_source=desktop"><img src="http://upload.jianshu.io/admin_banners/web_images/3261/9434db676e82604d48fb3689295002b64f3054c2.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="540"></a>
+            </div>
+        </div>
+        <a class="pre carousel-control">&lt</a>
+        <a class="next carousel-control">&gt</a>
+    </div> -->
+
+    <!--内容区-->
+    <div class="am-g am-hide" id="contentContainer">
+        <div class="am-u-sm-12 am-u-md-8 am-u-lg-8 am-u-sm-centered am-cf am-fl am-padding-0">
+            <!--左侧内容区-->
+            <!-- <div class="fenlei am-padding-top-sm am-padding-bottom-sm am-text-danger">
+                <span>分类名字</span>
+            </div> -->
+            <div id="container-left" class="am-u-sm-12 am-u-md-12 am-u-lg-8  am-cf am-fl am-list am-padding-0">
+
+                <ul class="am-list" id="lazyLoad">
+                    <!--带图片-->
+
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-u-sm-8 am-padding-0 am-margin-top-lg">
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+                            </a>
+                            <ul class=" am-padding-0 ">
+                                <li class="text-height am-u-sm-8  am-margin-0 am-padding-0">
+                                    <p class="line-clamp" style="padding:0;font-size: 13px;line-height: 24px">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                        <div class="img-height am-u-sm-3 am-thumbnail  am-margin-top-lg">
+                            <img class="am-margin-0" src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300" alt="">
+                        </div>
+                    </li>
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-u-sm-8 am-padding-0 am-margin-top-lg">
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+                            </a>
+                            <ul class=" am-padding-0 ">
+                                <li class="text-height am-u-sm-8  am-margin-0 am-padding-0">
+                                    <p class="line-clamp" style="padding:0;font-size: 13px;line-height: 24px">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                        <div class="img-height am-u-sm-3 am-thumbnail  am-margin-top-lg">
+                            <img class="am-margin-0" src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300" alt="">
+                        </div>
+                    </li>
+                    <!--不带图片-->
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-margin-top-lg">
+                            <!-- <a href="#" class="am-inline" id="photo-a"><img src="http://upload.jianshu.io/users/upload_avatars/2159989/d70533e2-71f8-4de4-a7ad-a13f92440b8f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="" style="width:32px;height:32px;border-radius:50%"></a>
+                            <span class="am-text-sm am-margin-right-sm">陈香梅</span><span class="am-link-muted am-text-sm">昨天 18：12</span> -->
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block" style="padding:.4rem 0">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+
+                            </a>
+                            <ul class=" am-padding-0">
+                                <li class="am-u-sm-12 addHeight am-margin-0 am-padding-0">
+                                    <p class="line-clamp-2">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+
+                                </li>
+                                <!--<li class=" am-u-sm-3 am-thumbnail ">
+                                    <img class=" am-margin-0 " src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300 " alt=" ">
+                                </li>-->
+                            </ul>
+                            <!--下面icon-->
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-margin-top-lg">
+                            <!-- <a href="#" class="am-inline" id="photo-a"><img src="http://upload.jianshu.io/users/upload_avatars/2159989/d70533e2-71f8-4de4-a7ad-a13f92440b8f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="" style="width:32px;height:32px;border-radius:50%"></a>
+                            <span class="am-text-sm am-margin-right-sm">陈香梅</span><span class="am-link-muted am-text-sm">昨天 18：12</span> -->
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block" style="padding:.4rem 0">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+
+                            </a>
+                            <ul class=" am-padding-0">
+                                <li class="am-u-sm-12 addHeight am-margin-0 am-padding-0">
+                                    <p class="line-clamp-2">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+
+                                </li>
+                                <!--<li class=" am-u-sm-3 am-thumbnail ">
+                                    <img class=" am-margin-0 " src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300 " alt=" ">
+                                </li>-->
+                            </ul>
+                            <!--下面icon-->
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--带图片-->
+
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-u-sm-8 am-padding-0 am-margin-top-lg">
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+                            </a>
+                            <ul class=" am-padding-0 ">
+                                <li class="text-height am-u-sm-8  am-margin-0 am-padding-0">
+                                    <p class="line-clamp" style="padding:0;font-size: 13px;line-height: 24px">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                        <div class="img-height am-u-sm-3 am-thumbnail  am-margin-top-lg">
+                            <img class="am-margin-0" src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300" alt="">
+                        </div>
+                    </li>
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-u-sm-8 am-padding-0 am-margin-top-lg">
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+                            </a>
+                            <ul class=" am-padding-0 ">
+                                <li class="text-height am-u-sm-8  am-margin-0 am-padding-0">
+                                    <p class="line-clamp" style="padding:0;font-size: 13px;line-height: 24px">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                        <div class="img-height am-u-sm-3 am-thumbnail  am-margin-top-lg">
+                            <img class="am-margin-0" src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300" alt="">
+                        </div>
+                    </li>
+                    <!--不带图片-->
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-margin-top-lg">
+                            <!-- <a href="#" class="am-inline" id="photo-a"><img src="http://upload.jianshu.io/users/upload_avatars/2159989/d70533e2-71f8-4de4-a7ad-a13f92440b8f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="" style="width:32px;height:32px;border-radius:50%"></a>
+                            <span class="am-text-sm am-margin-right-sm">陈香梅</span><span class="am-link-muted am-text-sm">昨天 18：12</span> -->
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block" style="padding:.4rem 0">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+
+                            </a>
+                            <ul class=" am-padding-0">
+                                <li class="am-u-sm-12 addHeight am-margin-0 am-padding-0">
+                                    <p class="line-clamp-2">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+
+                                </li>
+                                <!--<li class=" am-u-sm-3 am-thumbnail ">
+                                    <img class=" am-margin-0 " src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300 " alt=" ">
+                                </li>-->
+                            </ul>
+                            <!--下面icon-->
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="am-u-sm-12  am-u-md-12 am-u-lg-12 am-padding-0">
+                        <div class="container-box am-margin-top-lg">
+                            <!-- <a href="#" class="am-inline" id="photo-a"><img src="http://upload.jianshu.io/users/upload_avatars/2159989/d70533e2-71f8-4de4-a7ad-a13f92440b8f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="" style="width:32px;height:32px;border-radius:50%"></a>
+                            <span class="am-text-sm am-margin-right-sm">陈香梅</span><span class="am-link-muted am-text-sm">昨天 18：12</span> -->
+                            <a href="#" class="am-text-primary am-link-muted am-text-lg am-block" style="padding:.4rem 0">
+                                <span class="am-margin-0" style="font-size: 18px; font-weight:700 ;color:#333">夏天适合读什么书</span>
+
+                            </a>
+                            <ul class=" am-padding-0">
+                                <li class="am-u-sm-12 addHeight am-margin-0 am-padding-0">
+                                    <p class="line-clamp-2">
+                                        以体裁分，春天适合读诗歌，夏天适合读戏剧，秋天适合读散文，冬天适合读小说。以诗歌来分，春天适合读爱情诗，夏天适合读山水诗，秋天适合读边塞诗，冬天适合读咏怀诗。 夏天的确是读诗...
+                                    </p>
+
+                                </li>
+                                <!--<li class=" am-u-sm-3 am-thumbnail ">
+                                    <img class=" am-margin-0 " src="http://upload-images.jianshu.io/upload_images/2159989-832806110a54034b.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/375/h/300 " alt=" ">
+                                </li>-->
+                            </ul>
+                            <!--下面icon-->
+                            <div class="meta">
+                                <a class="collection-tag" target="_blank" href="/c/5AUzod">旅行·在路上</a>
+                                <span>2017.7.14</span>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+
+                </ul>
+                <!--发送ajax-->
+                <button id="ajax" class=" am-u-sm-12 am-btn am-btn-primary am-u-sm-centered am-text-lg am-margin-top-sm">加载更多</button>
+            </div>
+            <!--右侧内容区域-->
+            <div id="container-right" class="am-u-sm-12 am-u-md-12 am-u-lg-4 am-fr am-padding-left-lg am-padding-right-0">
+                <!-- 介绍自己 -->
+                <div id="jianjie" class="am-radius am-u-sm-12 am-center am-padding-right-0 am-hide">
+                    <div class="jianjie-top am-u-sm-12 am-padding-0">
+                        <img src="./img/photo.png" alt="" class="am-btn am-round am-padding-left-0">
+                        <span class="am-text-xl am-text-center am-text-truncate " style="color:#333">疯狂的小强</span>
+                    </div>
+                    <div class="jianjie-bottom am-text-xs">
+                        <p>放点文字介绍自己放点文字介绍自己放点文字介绍自己放点文字介绍自己放点文字介绍自己</p>
+                    </div>
+                </div>
+
+                <!-- 放置二维码 -->
+
+                <div id="erweima" class="am-radius am-u-sm-12 am-center am-padding-right-0 am-margin-top-lg " style="display:none">
+                    <img class=" am-inline-block am-u-sm-4 am-margin-0 am-padding-top-sm am-padding-bottom-sm " src="./img/erweima.jpg " alt=" ">
+                    <span id="erweimaText" class="am-u-sm-7 am-padding-0 am-text-lg am-text-middle am-text-truncate">添加微信随时交流</span>
+                </div>
+
+                <div id="zifenlei" class="am-u-sm-12 am-margin-top-xl am-hide " style=" display:none ">
+
+                    <ul class="am-u-sm-5 am-cf am-padding-left-0 am-padding-right-0 am-padding-top-md am-padding-bottom-md am-text-center am-text-truncate ">
+                        <a href=" ">
+                            <li><span>子分类名字</span></li>
+                        </a>
+                        <a href=" ">
+                            <li><span>子分类名字</span></li>
+                        </a>
+                        <a href=" ">
+                            <li><span>子分类名字</span></li>
+                        </a>
+                    </ul>
+                    <ul class="am-u-sm-5 am-cf am-padding-left-0 am-padding-right-0 am-padding-top-md am-padding-bottom-md am-text-center am-text-truncate ">
+                        <a href=" ">
+                            <li><span>子分类名字</span></li>
+                        </a>
+                        <a href=" ">
+                            <li><span>子分类名字</span></li>
+                        </a>
+                        <a href=" ">
+                            <li><span>子分类名字</span></li>
+                        </a>
+                    </ul>
+                </div>
+                <!--推荐文章-->
+                <div class="recommend ">
+                    <span class="am-text-lg recommend-span ">推荐文章</span>
+                    <div class="containerOfAuthor am-cf ">
+                        <ul class="am-padding-0 " id="recommendOfAuthor ">
+                            <li>
+                                <ul class="am-cf containerOfAuthor-ul am-padding-0 am-u-sm-12 ">
+                                    <li class="am-circle am-fl am-margin-right-sm "><img class="am-img-thumbnail am-circle " src="http://upload.jianshu.io/users/upload_avatars/6287/06c537002583.png?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144
+                    " alt=" ">
+                                    </li>
+                                    <li class="am-padding-0 ">
+                                        <a href="# " target="_blank ">
+                                            <span class="am-text-sm am-block ">妈妈说你太优秀了，很不错啊。我们一起还房贷吧</span>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="am-cf containerOfAuthor-ul am-padding-0 am-u-sm-12 ">
+                                    <li class="am-circle am-fl am-margin-right-sm "><img class="am-img-thumbnail am-circle " src="http://upload.jianshu.io/users/upload_avatars/6287/06c537002583.png?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144
+                    " alt=" ">
+                                    </li>
+                                    <li class="am-padding-0 ">
+
+                                        <a href="# " target="_blank ">
+                                            <span class="am-text-sm am-block ">妈妈说你太优秀了，很不错啊。我们一起还房贷吧</span>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="am-cf containerOfAuthor-ul am-padding-0 am-u-sm-12 ">
+                                    <li class="am-circle am-fl am-margin-right-sm "><img class="am-img-thumbnail am-circle " src="http://upload.jianshu.io/users/upload_avatars/6287/06c537002583.png?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144
+                    " alt=" ">
+                                    </li>
+                                    <li class="am-padding-0 ">
+                                        <a href="# " target="_blank ">
+                                            <span class="am-text-sm am-block ">妈妈说你太优秀了，很不错啊。我们一起还房贷吧</span>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="am-cf containerOfAuthor-ul am-padding-0 am-u-sm-12 ">
+                                    <li class="am-circle am-fl am-margin-right-sm "><img class="am-img-thumbnail am-circle " src="http://upload.jianshu.io/users/upload_avatars/6287/06c537002583.png?imageMogr2/auto-orient/strip|imageView2/1/w/144/h/144
+                    " alt=" ">
+                                    </li>
+                                    <li class="am-padding-0 ">
+                                        <a href="# " target="_blank ">
+                                            <span class="am-text-sm am-block ">妈妈说你太优秀了，很不错啊。我们一起还房贷吧</span>
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <a href="# " target="_blank " id="lookMore" class="am-btn  am-center am-u-sm-12 ">查看更多></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--copyright-->
+    <div class="am-g am-hide" style="padding-top:2rem ">
+        <footer>
+            <div class="am-u-sm-12 am-u-md-8 am-u-lg-8 am-u-sm-centered am-cf am-fl am-padding-0 am-margin-bottom-sm ">
+                <div class="am-u-sm-12 am-padding-bottom-xs am-text-md am-padding-0 ">
+                    <a target="_blank " href="# ">关于</a><em> · </em><a target="_blank " href="# ">联系我</a><em> · </em><a target="_blank " href="# ">合作</a>
+                    <div class="am-text-xs am-padding-top-xs ">
+                        © 2017 疯狂的小强 <a target="_blank " href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602000064 "> 浙ICP备16010101号-1 </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <!--Gotop-->
+    <button data-am-smooth-scroll class="am-hide am-btn am-btn-primary am-icon-chevron-up am-fr am-btn-sm " id="goTop "></button>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="../assets/js/jquery.min.js "></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js "></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js "></script>
+<script src="../assets/js/amazeui.ie8polyfill.min.js "></script>
+<![endif]-->
+    <script src="../assets/js/amazeui.min.js "></script>
+    <!-- <script src="../assets/js/app.js "></script> -->
+    <!-- <script src="../assets/js/jianshu.js "></script> -->
+    <script src="../dist/index.js"></script>
+    <!-- <script src="../dist/index.js"></script>? -->
+    <!-- <script id="__bs_script__ ">
+        //<![CDATA[
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'> <\ / script > ".replace("
+                    HOST ", location.hostname)); / / ]] >
+    </script> -->
+</body>
+
+</html>
