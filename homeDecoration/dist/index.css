@@ -1,4 +1,13 @@
-* {
+.fix {
+  width: 22px;
+  height: 222px; }
+
+.top {
+  -webkit-transform: translate(2, 2);
+     -moz-transform: translate(2, 2);
+      -ms-transform: translate(2, 2);
+       -o-transform: translate(2, 2);
+          transform: translate(2, 2); }* {
   font-family: Microsoft YaHei, "Times New Roman";
   font-size: 14px; }
 

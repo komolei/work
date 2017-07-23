@@ -17,7 +17,9 @@ module.exports = {
     entry: base,
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js'
+        publicPath:'../assets/',
+        filename: '[name].js',
+        
     },
     resolve: {
         alias: {
@@ -64,9 +66,9 @@ module.exports = {
                         }, {
                             loader: 'postcss-loader',
                             options: {
-                                config: {
-                                    path: './postcss.config.js'
-                                }
+                                // config: {
+                                //     path: './postcss.config.js'
+                                // }
                             }
                         }]
                         // use: ['css-loader', 'postcss-loader']
