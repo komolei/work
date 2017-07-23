@@ -1,0 +1,11 @@
+.gotop{
+    border:10px solid yellow;
+    transition: all 52s;
+     width:40px;
+    height:40px;
+    background:url(../img/logo.jpg);
+}
+div{
+    @extend .gotop
+   
+}

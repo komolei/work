@@ -1,0 +1,30 @@
+.gotop, div {
+  border: 10px solid yellow;
+  -webkit-transition: all 52s;
+  -o-transition: all 52s;
+  -moz-transition: all 52s;
+  transition: all 52s;
+  width: 40px;
+  height: 40px;
+  background: url(0e5b8afd2d06346e594c84ec577a4c3a.jpg); }
+#clc{
+    width:10px;
+    height: 10px;
+    border: 1px solid red;
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    -moz-transition: all 2s;
+    transition: all 2s;
+}.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+  -webkit-transition: all 22s;
+  -o-transition: all 22s;
+  -moz-transition: all 22s;
+  transition: all 22s;
+}
+.box div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
