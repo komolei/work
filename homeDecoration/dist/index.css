@@ -46,7 +46,9 @@ body {
     height: 31px;
     line-height: 31px;
     color: #909090;
-    width: 1400px; }
+    width: 1400px;
+    width: 100%;
+    overflow: hidden; }
     .fix-nav-container .fix-nav {
       padding: 0 100px; }
     .fix-nav-container .fix-nav-left {
@@ -83,13 +85,26 @@ body {
   #logo {
     height: 32px;
     margin-top: -10px;
-    margin-left: -25px; }
+    margin-left: -20px; }
+  #demo-slider-0 {
+    height: 320px; }
+    #demo-slider-0 div,
+    #demo-slider-0 ul,
+    #demo-slider-0 li,
+    #demo-slider-0 img {
+      height: 100%; }
+    #demo-slider-0 .am-control-nav {
+      display: none; }
+    #demo-slider-0 .am-prev,
+    #demo-slider-0 .am-nav-next {
+      height: 50px; }
   .fix-flexbox-container {
     display: none; }
   .pingo-container {
     padding-top: 40px;
     background: #fff;
-    height: 600px; }
+    height: 600px;
+    height: 460px; }
     .pingo-container .pingo {
       width: 1000px;
       margin: 0 auto;
@@ -152,6 +167,26 @@ body {
           line-height: 4rem;
           font-size: 16px;
           text-align: center; }
+    .pingo-container .pingo {
+      width: 100%; }
+    .pingo-container .pingo-content {
+      width: 100%;
+      padding: 0; }
+      .pingo-container .pingo-content .first {
+        width: 100%;
+        padding: 1rem;
+        height: 100%; }
+        .pingo-container .pingo-content .first:hover {
+          width: 100%;
+          padding: 1rem; }
+      .pingo-container .pingo-content .second {
+        display: none; }
+      .pingo-container .pingo-content .pingo-content-right {
+        right: 1rem; }
+        .pingo-container .pingo-content .pingo-content-right p {
+          margin-top: 10px; }
+        .pingo-container .pingo-content .pingo-content-right a {
+          margin-left: -100%; }
   .gongzhuang-container {
     padding-top: 40px;
     background: #f7f5f6;
@@ -253,11 +288,19 @@ body {
         line-height: 4rem;
         color: #fff;
         text-align: center; }
+    .gongzhuang-container .gongzhuang-header {
+      width: 100%; }
+    .gongzhuang-container .gongzhuang-content {
+      width: 100%;
+      padding: 0 1rem;
+      margin-top: 10px; }
+    .gongzhuang-container .gongzhuang-footer {
+      margin: 0; }
   .shuzhuang-container {
     padding-top: 40px;
     height: 660px;
     background: #fff;
-    padding: 0; }
+    height: 420px; }
     .shuzhuang-container .shuzhuang-header {
       width: 1400px;
       margin: 0 auto;
@@ -295,11 +338,18 @@ body {
       width: 100%; }
     .shuzhuang-container .shuzhuang-content {
       width: 100%;
-      padding: 0; }
+      padding: 0;
+      margin-top: 10px; }
+      .shuzhuang-container .shuzhuang-content span,
+      .shuzhuang-container .shuzhuang-content p {
+        font-size: 12px; }
+    .shuzhuang-container .shuzhuang-footer {
+      margin-top: 3rem; }
   .ruanzhuang-container {
     height: 660px;
     background: #fff;
-    padding: 0; }
+    padding: 0;
+    height: 300px; }
     .ruanzhuang-container .ruanzhuang-header {
       width: 1400px;
       margin: 0 auto;
@@ -329,7 +379,8 @@ body {
     background-color: #c5b88a;
     padding-top: 50px;
     height: 530px;
-    padding: 50 100px; }
+    padding: 50 100px;
+    height: 700px; }
     .yikefengshui-container .yikefengshui-header {
       width: 1400px;
       margin: 0 auto;
@@ -366,9 +417,19 @@ body {
           color: #fff;
           text-align: center;
           font-size: 16px; }
+    .yikefengshui-container .yikefengshui-header {
+      width: 100%;
+      padding: 0; }
+    .yikefengshui-container .text .text-content,
+    .yikefengshui-container .text span {
+      font-size: 12px; }
+    .yikefengshui-container .text div {
+      margin: 0; }
   .honor-container {
     padding: 60px 100px;
-    background: #fff; }
+    background: #fff;
+    height: 400px;
+    padding: 60px 0; }
     .honor-container .honor-header {
       width: 1400px;
       margin: 0 auto;
@@ -405,9 +466,23 @@ body {
         color: #fff;
         text-align: center;
         font-size: 16px; }
+    .honor-container .honor-header {
+      width: 100%;
+      padding: 0; }
+    .honor-container .honor-content {
+      width: 100%;
+      padding: 0;
+      margin-top: 10px; }
+      .honor-container .honor-content .am-g {
+        width: 100%; }
+        .honor-container .honor-content .am-g div {
+          padding: 4px; }
+    .honor-container .honor-footer {
+      margin-top: 3rem; }
   .gongyi-container {
     background: #fff;
-    padding: 60px 0px; }
+    padding: 60px 0px;
+    padding: 0; }
     .gongyi-container .gongyi-header {
       width: 1400px;
       margin: 0 auto;
@@ -487,9 +562,25 @@ body {
         color: #fff;
         text-align: center;
         font-size: 16px; }
+    .gongyi-container .gongyi-header {
+      width: 100%;
+      padding: 0; }
+    .gongyi-container .gongyi-content {
+      margin-top: 3rem; }
+      .gongyi-container .gongyi-content p {
+        margin: 3rem auto; }
+    .gongyi-container .gongyi-box {
+      width: 100%;
+      padding: 0; }
+      .gongyi-container .gongyi-box div span:last-child {
+        right: 2px; }
+      .gongyi-container .gongyi-box .icon {
+        display: none; }
   .shop-container {
     background: #fff;
-    padding: 60px 100px; }
+    padding: 60px 100px;
+    width: 100%;
+    padding: 0; }
     .shop-container .shop-header {
       width: 1400px;
       margin: 0 auto;
@@ -524,9 +615,24 @@ body {
         color: #fff;
         text-align: center;
         font-size: 16px; }
+    .shop-container .shop-header {
+      width: 100%;
+      padding-top: 60px; }
+    .shop-container .shop-content {
+      width: 100%;
+      padding: 0; }
+      .shop-container .shop-content .am-thumbnail-caption p {
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis; }
+    .shop-container .shop-footer {
+      padding: 10px 0 60px 0;
+      margin: 0; }
   .about-container {
     background: #323232;
-    padding: 30px 100px; }
+    padding: 30px 100px;
+    padding: 0; }
     .about-container .icon {
       width: 20px;
       height: 2px;
@@ -559,8 +665,16 @@ body {
           margin: 5px 0; }
           .about-container .about .third div p:first-child {
             margin: 0; }
-      .about-container .about .third .right {
-        margin: 0 10px; } }
+      .about-container .about .right {
+        margin: 0 10px; }
+    .about-container .about {
+      width: 100%; }
+      .about-container .about .first p, .about-container .about .second p, .about-container .about .third p {
+        font-size: 16px; }
+      .about-container .about .first div p, .about-container .about .second div p, .about-container .about .third div p {
+        font-size: 12px; }
+      .about-container .about .right {
+        margin: 0; } }
 
 @media all and (min-width: 641px) and (max-width: 1024px) {
   .fix-nav-container {
@@ -1166,7 +1280,7 @@ body {
           margin: 5px 0; }
           .about-container .about .third div p:first-child {
             margin: 0; }
-      .about-container .about .third .right {
+      .about-container .about .right {
         margin: 0 10px; } }
 
 @media all and (min-width: 1024px) {
@@ -1773,5 +1887,5 @@ body {
           margin: 5px 0; }
           .about-container .about .third div p:first-child {
             margin: 0; }
-      .about-container .about .third .right {
+      .about-container .about .right {
         margin: 0 10px; } }
