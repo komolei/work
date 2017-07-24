@@ -132,15 +132,9 @@ if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = function(exec){
-  try {
-    return !!exec();
-  } catch(e){
-    return true;
-  }
-};
+module.exports = __webpack_require__.p + "icon_VRST0x_.png";
 
 /***/ }),
 /* 4 */
@@ -171,7 +165,7 @@ $exports.store = store;
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(3)(function(){
+module.exports = !__webpack_require__(305)(function(){
   return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
 });
 
@@ -301,7 +295,7 @@ module.exports = function(it){
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(0)
-  , fails   = __webpack_require__(3)
+  , fails   = __webpack_require__(305)
   , defined = __webpack_require__(19)
   , quot    = /"/g;
 // B.2.3.2.1 CreateHTML(string, tag, attribute, value)
@@ -383,7 +377,7 @@ module.exports = function(it){
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var fails = __webpack_require__(3);
+var fails = __webpack_require__(305);
 
 module.exports = function(method, arg){
   return !!method && fails(function(){
@@ -415,7 +409,7 @@ module.exports = function(it, S){
 // most Object methods by ES6 should accept primitives
 var $export = __webpack_require__(0)
   , core    = __webpack_require__(24)
-  , fails   = __webpack_require__(3);
+  , fails   = __webpack_require__(305);
 module.exports = function(KEY, exec){
   var fn  = (core.Object || {})[KEY] || Object[KEY]
     , exp = {};
@@ -513,7 +507,7 @@ module.exports = function(fn, that, length){
 if(__webpack_require__(6)){
   var LIBRARY             = __webpack_require__(32)
     , global              = __webpack_require__(2)
-    , fails               = __webpack_require__(3)
+    , fails               = __webpack_require__(305)
     , $export             = __webpack_require__(0)
     , $typed              = __webpack_require__(57)
     , $buffer             = __webpack_require__(84)
@@ -1070,7 +1064,7 @@ var META     = __webpack_require__(31)('meta')
 var isExtensible = Object.isExtensible || function(){
   return true;
 };
-var FREEZE = !__webpack_require__(3)(function(){
+var FREEZE = !__webpack_require__(305)(function(){
   return isExtensible(Object.preventExtensions({}));
 });
 var setMeta = function(it){
@@ -1283,7 +1277,7 @@ module.exports = function(it, tag, stat){
 
 var $export = __webpack_require__(0)
   , defined = __webpack_require__(19)
-  , fails   = __webpack_require__(3)
+  , fails   = __webpack_require__(305)
   , spaces  = __webpack_require__(66)
   , space   = '[' + spaces + ']'
   , non     = '\u200b\u0085'
@@ -1534,7 +1528,7 @@ module.exports = function(){
 
 var hide     = __webpack_require__(11)
   , redefine = __webpack_require__(12)
-  , fails    = __webpack_require__(3)
+  , fails    = __webpack_require__(305)
   , defined  = __webpack_require__(19)
   , wks      = __webpack_require__(5);
 
@@ -1574,7 +1568,7 @@ var global            = __webpack_require__(2)
   , forOf             = __webpack_require__(44)
   , anInstance        = __webpack_require__(38)
   , isObject          = __webpack_require__(4)
-  , fails             = __webpack_require__(3)
+  , fails             = __webpack_require__(305)
   , $iterDetect       = __webpack_require__(53)
   , setToStringTag    = __webpack_require__(40)
   , inheritIfRequired = __webpack_require__(67);
@@ -1687,7 +1681,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 // Forced replacement prototype accessors methods
-module.exports = __webpack_require__(32)|| !__webpack_require__(3)(function(){
+module.exports = __webpack_require__(32)|| !__webpack_require__(305)(function(){
   var K = Math.random();
   // In FF throws only define methods
   __defineSetter__.call(null, K, function(){ /* empty */});
@@ -2273,7 +2267,7 @@ var global         = __webpack_require__(2)
   , $typed         = __webpack_require__(57)
   , hide           = __webpack_require__(11)
   , redefineAll    = __webpack_require__(39)
-  , fails          = __webpack_require__(3)
+  , fails          = __webpack_require__(305)
   , anInstance     = __webpack_require__(38)
   , toInteger      = __webpack_require__(30)
   , toLength       = __webpack_require__(8)
@@ -2571,7 +2565,7 @@ module.exports = g;
 /* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(6) && !__webpack_require__(3)(function(){
+module.exports = !__webpack_require__(6) && !__webpack_require__(305)(function(){
   return Object.defineProperty(__webpack_require__(59)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 });
 
@@ -2661,7 +2655,7 @@ var getKeys  = __webpack_require__(33)
   , $assign  = Object.assign;
 
 // should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(3)(function(){
+module.exports = !$assign || __webpack_require__(305)(function(){
   var A = {}
     , B = {}
     , S = Symbol()
@@ -3313,7 +3307,7 @@ module.exports = function(iter, ITERATOR){
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var _icon = __webpack_require__(118);
+var _icon = __webpack_require__(3);
 
 var _icon2 = _interopRequireDefault(_icon);
 
@@ -5960,12 +5954,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 118 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "icon_VRST0x_.png";
-
-/***/ }),
+/* 118 */,
 /* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6200,7 +6189,7 @@ var global         = __webpack_require__(2)
   , $export        = __webpack_require__(0)
   , redefine       = __webpack_require__(12)
   , META           = __webpack_require__(29).KEY
-  , $fails         = __webpack_require__(3)
+  , $fails         = __webpack_require__(305)
   , shared         = __webpack_require__(48)
   , setToStringTag = __webpack_require__(40)
   , uid            = __webpack_require__(31)
@@ -6747,7 +6736,7 @@ var global            = __webpack_require__(2)
   , cof               = __webpack_require__(18)
   , inheritIfRequired = __webpack_require__(67)
   , toPrimitive       = __webpack_require__(21)
-  , fails             = __webpack_require__(3)
+  , fails             = __webpack_require__(305)
   , gOPN              = __webpack_require__(36).f
   , gOPD              = __webpack_require__(16).f
   , dP                = __webpack_require__(7).f
@@ -6876,7 +6865,7 @@ $export($export.P + $export.F * (!!$toFixed && (
   0.9.toFixed(0) !== '1' ||
   1.255.toFixed(2) !== '1.25' ||
   1000000000000000128..toFixed(0) !== '1000000000000000128'
-) || !__webpack_require__(3)(function(){
+) || !__webpack_require__(305)(function(){
   // V8 ~ Android 4.3-
   $toFixed.call({});
 })), 'Number', {
@@ -6937,7 +6926,7 @@ $export($export.P + $export.F * (!!$toFixed && (
 "use strict";
 
 var $export      = __webpack_require__(0)
-  , $fails       = __webpack_require__(3)
+  , $fails       = __webpack_require__(305)
   , aNumberValue = __webpack_require__(96)
   , $toPrecision = 1..toPrecision;
 
@@ -7224,7 +7213,7 @@ var $export = __webpack_require__(0)
   , $imul   = Math.imul;
 
 // some WebKit versions fails with big numbers, some has wrong arity
-$export($export.S + $export.F * __webpack_require__(3)(function(){
+$export($export.S + $export.F * __webpack_require__(305)(function(){
   return $imul(0xffffffff, 5) != -5 || $imul.length != 2;
 }), 'Math', {
   imul: function imul(x, y){
@@ -7291,7 +7280,7 @@ var $export = __webpack_require__(0)
   , exp     = Math.exp;
 
 // V8 near Chromium 38 has a problem with very small numbers
-$export($export.S + $export.F * __webpack_require__(3)(function(){
+$export($export.S + $export.F * __webpack_require__(305)(function(){
   return !Math.sinh(-2e-17) != -2e-17;
 }), 'Math', {
   sinh: function sinh(x){
@@ -7700,7 +7689,7 @@ var $export     = __webpack_require__(0)
   , toObject    = __webpack_require__(9)
   , toPrimitive = __webpack_require__(21);
 
-$export($export.P + $export.F * __webpack_require__(3)(function(){
+$export($export.P + $export.F * __webpack_require__(305)(function(){
   return new Date(NaN).toJSON() !== null || Date.prototype.toJSON.call({toISOString: function(){ return 1; }}) !== 1;
 }), 'Date', {
   toJSON: function toJSON(key){
@@ -7718,7 +7707,7 @@ $export($export.P + $export.F * __webpack_require__(3)(function(){
 
 // 20.3.4.36 / 15.9.5.43 Date.prototype.toISOString()
 var $export = __webpack_require__(0)
-  , fails   = __webpack_require__(3)
+  , fails   = __webpack_require__(305)
   , getTime = Date.prototype.getTime;
 
 var lz = function(num){
@@ -7847,7 +7836,7 @@ var $export        = __webpack_require__(0)
   , createProperty = __webpack_require__(77);
 
 // WebKit Array.of isn't generic
-$export($export.S + $export.F * __webpack_require__(3)(function(){
+$export($export.S + $export.F * __webpack_require__(305)(function(){
   function F(){}
   return !(Array.of.call(F) instanceof F);
 }), 'Array', {
@@ -7894,7 +7883,7 @@ var $export    = __webpack_require__(0)
   , arraySlice = [].slice;
 
 // fallback for not array-like ES3 strings and DOM objects
-$export($export.P + $export.F * __webpack_require__(3)(function(){
+$export($export.P + $export.F * __webpack_require__(305)(function(){
   if(html)arraySlice.call(html);
 }), 'Array', {
   slice: function slice(begin, end){
@@ -7923,7 +7912,7 @@ $export($export.P + $export.F * __webpack_require__(3)(function(){
 var $export   = __webpack_require__(0)
   , aFunction = __webpack_require__(13)
   , toObject  = __webpack_require__(9)
-  , fails     = __webpack_require__(3)
+  , fails     = __webpack_require__(305)
   , $sort     = [].sort
   , test      = [1, 2, 3];
 
@@ -8223,7 +8212,7 @@ var global            = __webpack_require__(2)
   // "new" creates a new object, old webkit buggy here
   , CORRECT_NEW       = new $RegExp(re1) !== re1;
 
-if(__webpack_require__(6) && (!CORRECT_NEW || __webpack_require__(3)(function(){
+if(__webpack_require__(6) && (!CORRECT_NEW || __webpack_require__(305)(function(){
   re2[__webpack_require__(5)('match')] = false;
   // RegExp constructor can alter flags and IsRegExp works correct with @@match
   return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
@@ -8271,7 +8260,7 @@ var define = function(fn){
 };
 
 // 21.2.5.14 RegExp.prototype.toString()
-if(__webpack_require__(3)(function(){ return $toString.call({source: 'a', flags: 'b'}) != '/a/b'; })){
+if(__webpack_require__(305)(function(){ return $toString.call({source: 'a', flags: 'b'}) != '/a/b'; })){
   define(function toString(){
     var R = anObject(this);
     return '/'.concat(R.source, '/',
@@ -8760,7 +8749,7 @@ $export($export.S + $export.F * !$typed.CONSTR, ARRAY_BUFFER, {
   }
 });
 
-$export($export.P + $export.U + $export.F * __webpack_require__(3)(function(){
+$export($export.P + $export.U + $export.F * __webpack_require__(305)(function(){
   return !new $ArrayBuffer(2).slice(1, undefined).byteLength;
 }), ARRAY_BUFFER, {
   // 24.1.4.3 ArrayBuffer.prototype.slice(start, end)
@@ -8891,7 +8880,7 @@ var $export   = __webpack_require__(0)
   , rApply    = (__webpack_require__(2).Reflect || {}).apply
   , fApply    = Function.apply;
 // MS Edge argumentsList argument is optional
-$export($export.S + $export.F * !__webpack_require__(3)(function(){
+$export($export.S + $export.F * !__webpack_require__(305)(function(){
   rApply(function(){});
 }), 'Reflect', {
   apply: function apply(target, thisArgument, argumentsList){
@@ -8911,7 +8900,7 @@ var $export    = __webpack_require__(0)
   , aFunction  = __webpack_require__(13)
   , anObject   = __webpack_require__(1)
   , isObject   = __webpack_require__(4)
-  , fails      = __webpack_require__(3)
+  , fails      = __webpack_require__(305)
   , bind       = __webpack_require__(93)
   , rConstruct = (__webpack_require__(2).Reflect || {}).construct;
 
@@ -8964,7 +8953,7 @@ var dP          = __webpack_require__(7)
   , toPrimitive = __webpack_require__(21);
 
 // MS Edge has broken Reflect.defineProperty - throwing instead of returning false
-$export($export.S + $export.F * __webpack_require__(3)(function(){
+$export($export.S + $export.F * __webpack_require__(305)(function(){
   Reflect.defineProperty(dP.f({}, 1, {value: 1}), 1, {value: 2});
 }), 'Reflect', {
   defineProperty: function defineProperty(target, propertyKey, attributes){
@@ -10856,6 +10845,18 @@ module.exports = function(regExp, replace){
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 305 */
+/***/ (function(module, exports) {
+
+module.exports = function(exec){
+  try {
+    return !!exec();
+  } catch(e){
+    return true;
+  }
+};
 
 /***/ })
 /******/ ]);

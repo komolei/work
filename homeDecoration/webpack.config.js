@@ -19,7 +19,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         // publicPath:'',
         filename: '[name].js',
-        
+
     },
     resolve: {
         alias: {
@@ -65,11 +65,11 @@ module.exports = {
                             loader: 'css-loader',
                         }, {
                             loader: 'postcss-loader',
-                            options: {
-                                // config: {
-                                //     path: './postcss.config.js'
-                                // }
-                            }
+                            // options: {
+                            //     // config: {
+                            //     //     path: './postcss.config.js'
+                            //     // }
+                            // }
                         }]
                         // use: ['css-loader', 'postcss-loader']
                 })
@@ -99,13 +99,10 @@ module.exports = {
                     use: ['css-loader', {
                         loader: 'postcss-loader',
                         options: {
-                            sourceMap: 'inline'
+                            sourceMap: true,
                         }
                     }, {
                         loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
                     }, ]
                 })
             },
@@ -118,16 +115,16 @@ module.exports = {
                     }
                 }
             },
-            {
-                test: /\.html/,
-                use: {
-                    loader: "html-loader",
-                    options: {
-                        minimize: false,
-                        attrs: false
-                    }
-                }
-            },
+            // {
+            //     test: /\.html/,
+            //     use: {
+            //         loader: "html-loader",
+            //         options: {
+            //             minimize: false,
+            //             attrs: false
+            //         }
+            //     }
+            // },
             // {
             //     test: /\.css$/,
             //     use: ExtractTextPlugin.extract({
