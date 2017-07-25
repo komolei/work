@@ -1,0 +1,97 @@
+@mixin ruanzhuang-xiangqing-first {
+    padding: 20px 100px 12px 100px;
+    .ruanzhuang-xiangqing-box {
+        // &:first-child {
+        //     padding-left: 0;
+        //     padding-right: 0;
+        // }
+        // &:last-child {
+        //     padding-left: 0;
+        //     padding-right: 0;
+        // }
+        // width: 100%;
+        margin-bottom: 45px;
+        img {
+            width: 100%
+        }
+    }
+}
+
+@mixin ruanzhuang-xiangqing-second {
+    // padding: 0 100px;
+    .ruanzhuang-xiangqing-box {
+        // width: 100%;
+        // padding: 0;
+        // &:first-child {
+        //     padding-left: 0;
+        //     // padding-right: 0;
+        // }
+        // &:last-child {
+        //     // padding-left: 0;
+        //     padding-right: 0;
+        // }
+        margin-bottom: 35px;
+        img {
+            width: 100%
+        }
+    }
+}
+
+@mixin ruanzhuang-xiangqing {
+    width: 1400px;
+    padding: 20px 100px;
+    @include ruanzhuang-xiangqing-first;
+    @include ruanzhuang-xiangqing-second;
+}
+
+@media all and (max-width:641px) {
+    body {
+        background: #f5f5f5;
+    }
+    .ruanzhuang-xiangqing {
+        @include ruanzhuang-xiangqing;
+        width: 100%;
+        padding: 20px 6px;
+        .ruanzhuang-xiangqing-second {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media all and (min-width:641px) and (max-width:1024px) {
+    body {
+        background: #f5f5f5;
+    }
+    .ruanzhuang-xiangqing {
+        @include ruanzhuang-xiangqing;
+        width: 100%;
+        padding: 20px 0;
+        .ruanzhuang-xiangqing-second {
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media all and (min-width:1024px) {
+    body {
+        background: #f5f5f5;
+    }
+    .ruanzhuang-xiangqing {
+        @include ruanzhuang-xiangqing;
+        .ruanzhuang-xiangqing-second {
+            &:last-child {
+                margin-bottom: 95px;
+            }
+        }
+    }
+    // .ruanzhuang-xiangqing-second {
+    //     @include ruanzhuang-xiangqing-second;
+    //     &:last-child {
+    //         margin-bottom: 95px;
+    //     }
+    // }
+}

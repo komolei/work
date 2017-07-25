@@ -13,6 +13,14 @@ require('babel-polyfill');
 // import decoration from "./assets/css/decoration.css";
 require('./assets/sass/text.scss');
 require('./assets/sass/decoration.scss');
+require('./assets/sass/pingo.scss');
+require('./assets/sass/gongzhuang.scss');
+require('./assets/sass/ruanzhuang.scss');
+require('./assets/sass/yikefengshui.scss');
+
+
+
+
 // require('./assets/less/text.less');
 
 import Icon from './assets/img/icon.png'

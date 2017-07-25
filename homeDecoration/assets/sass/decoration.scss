@@ -17,10 +17,13 @@
         height: 31px;
         line-height: 31px;
         color: #909090;
-        width: 1400px;
+        // width: 1400px;
         .fix-nav {
-            // width: 1400px;
+            width: 1400px;
             padding: 0 100px;
+            margin: 0 auto;
+            // left: 100%;
+            // transform: translateX(-100%);
         }
         .fix-nav-left {
             height: 31px;
@@ -1356,4 +1359,5 @@
         .about-container {
             @include about-container;
         }
+        //pingo.html
     }
