@@ -7,11 +7,11 @@
         font-family: Microsoft YaHei, "Times New Roman";
         font-size: 14px;
     }
-
+    
     body {
         background: #ebebeb;
     }
-
+    
     @mixin fix-nav-container {
         background-color: #ebebeb;
         height: 31px;
@@ -61,7 +61,7 @@
             }
         }
     }
-
+    
     @mixin nav {
         border: none;
         background-color: #fafafa;
@@ -107,7 +107,7 @@
             }
         }
     }
-
+    
     @mixin fix-flexbox-container {
         width: 1400px;
         padding-left: 100px;
@@ -218,7 +218,7 @@
             height: 50px; // background: #fff;
         }
     }
-
+    
     @mixin pingo-container {
         padding-top: 40px;
         background: #fff;
@@ -291,7 +291,7 @@
             }
         }
     }
-
+    
     @mixin gongzhuang-container {
         padding-top: 40px;
         background: #f7f5f6;
@@ -329,11 +329,11 @@
                     color: #fff;
                     div {
                         opacity: .3;
-                        transition: all 1s; // &:hover {
-                        //     opacity: 1;
-                        //     // width: 105%;
-                        // }
-                        // // width: 33.33%;
+                        transition: all 1s;
+                        &:hover {
+                            opacity: 1;
+                        }
+                        // width: 33.33%;
                         img {
                             width: 100%;
                             height: 600px;
@@ -421,7 +421,7 @@
             }
         }
     }
-
+    
     @mixin shuzhuang-container {
         padding-top: 40px;
         height: 660px;
@@ -466,10 +466,10 @@
             }
         }
     }
-
+    
     @mixin ruanzhuang-container {
         // padding-top: 40px;
-        height: 660px;
+        height: 630px;
         background: #fff;
         .ruanzhuang-header {
             width: 1400px;
@@ -494,9 +494,10 @@
             width: 1400px;
             margin: 0 auto;
             padding: 0 100px;
+            margin-top: 40px;
         }
     }
-
+    
     @mixin yikefengshui-container {
         background-color: #c5b88a;
         padding-top: 50px;
@@ -521,12 +522,21 @@
                 background-position-x: -153px;
             }
         }
-        .yekefengshui-content {
+        .yikefengshui-content {
             width: 1400px;
             padding: 0 100px;
+            margin: 0 auto;
+            position: relative;
+            .yikefengshui-img img {
+                width: 300px;
+                height: 300px;
+                // position: absolute;
+                // top: 100%;
+            }
         }
         .text {
             color: #fff;
+            right: 1rem;
             p:first-child {
                 font-size: 18px;
             }
@@ -548,7 +558,7 @@
             }
         }
     }
-
+    
     @mixin honor-container {
         padding: 60px 100px;
         background: #fff;
@@ -596,7 +606,7 @@
             }
         }
     }
-
+    
     @mixin sbicon {
         width: 1400px;
         margin: 0 auto;
@@ -616,7 +626,7 @@
             background-position-x: -153px;
         }
     }
-
+    
     @mixin sbfooter {
         text-align: center;
         margin-top: 5rem;
@@ -631,7 +641,7 @@
             font-size: 16px;
         }
     }
-
+    
     @mixin gongyi-container {
         background: #fff;
         padding: 60px 0px;
@@ -703,7 +713,7 @@
             }
         }
     }
-
+    
     @mixin shop-container {
         background: #fff;
         padding: 60px 100px;
@@ -721,7 +731,7 @@
             @include sbfooter;
         }
     }
-
+    
     @mixin about-container {
         background: #323232;
         padding: 30px 100px;
@@ -733,6 +743,7 @@
         }
         .about {
             width: 1400px;
+            padding: 0 100px;
             .first,
             {
                 p {
@@ -753,6 +764,7 @@
                     color: #ccc;
                 }
                 div {
+                    margin-top: 10px;
                     p {
                         font-size: 14px;
                         color: #808080;
@@ -772,18 +784,17 @@
                         color: #808080;
                         margin: 5px 0;
                         &:first-child {
-                            margin: 0;
+                            margin-top: 0;
                         }
                     }
                 }
-                
             }
             .right {
-                    margin: 0 10px;
-                }
+                margin: 0 10px;
+            }
         }
     }
-
+    
     .copyright {
         text-align: center;
         color: #808080;
@@ -798,7 +809,7 @@
             line-height: 5rem;
         }
     }
-
+    
     @media all and (max-width:641px) {
         .fix-nav-container {
             @include fix-nav-container;
@@ -927,6 +938,23 @@
                 width: 100%;
                 padding: 0;
             }
+            .yikefengshui-content {
+                width: 100%;
+                padding: 0;
+                .yikefengshui-img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-100%);
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+                .yikefengshui-img img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
             .text {
                 .text-content,
                 span {
@@ -962,7 +990,7 @@
         }
         .gongyi-container {
             @include gongyi-container;
-            padding: 0;
+            padding: 60px 0 0 0;
             .gongyi-header {
                 width: 100%;
                 padding: 0;
@@ -1015,62 +1043,282 @@
             padding: 0;
             .about {
                 width: 100%;
-                .first,.second,.third{
-                    p{
+                padding: 0;
+                .first,
+                .second,
+                .third {
+                    p {
                         font-size: 16px;
                     }
                     div {
-                        p{
+                        p {
                             font-size: 12px;
                         }
                     }
                 }
                 .right {
-                    margin: 0 ;
+                    margin: 0;
                 }
             }
         }
     }
-
+    
     @media all and (min-width:641px) and (max-width:1024px) {
         .fix-nav-container {
             @include fix-nav-container;
+            width: 100%;
+            overflow: hidden;
+            .fix-nav {
+                padding: 0;
+            }
         }
-        .nav {
-            @include nav;
+        .am-topbar-brand {
+            height: 32px;
+        }
+        #logo {
+            height: 32px;
+            margin-top: -10px;
+            margin-left: -20px;
+        }
+        #demo-slider-0 {
+            height: 320px;
+            div,
+            ul,
+            li,
+            img {
+                height: 100%;
+            }
+            .am-control-nav {
+                display: none;
+            }
+            .am-prev,
+            .am-nav-next {
+                height: 50px; // background: #fff;
+            }
         }
         .fix-flexbox-container {
-            @include fix-flexbox-container;
+            display: none;
         }
         .pingo-container {
             @include pingo-container;
+            height: 460px;
+            .pingo {
+                width: 100%;
+            }
+            .pingo-content {
+                width: 100%;
+                padding: 0;
+                .first {
+                    width: 100%;
+                    padding: 1rem;
+                    height: 100%;
+                    &:hover {
+                        width: 100%;
+                        padding: 1rem;
+                    }
+                }
+                .second {
+                    display: none;
+                }
+                .pingo-content-left {
+                    // left: 1rem;
+                }
+                .pingo-content-right {
+                    // padding:0 20px;
+                    // right: 1rem;
+                    padding: 0 1rem;
+                    p {
+                        margin-top: 10px; // margin-bottom: 20px;
+                        // white-space: nowrap;
+                        // overflow: hidden;
+                        // text-overflow: ellipsis;
+                        // height: 40px;
+                    }
+                    a {
+                        // margin-left: -60%;
+                    }
+                }
+            }
         }
         .gongzhuang-container {
             @include gongzhuang-container;
+            height: 1000px;
+            .gongzhuang-header {
+                width: 100%;
+            }
+            .gongzhuang-content {
+                width: 100%;
+                padding: 0 1rem;
+                margin-top: 10px;
+            }
+            .gongzhuang-footer {
+                margin-top: 3rem;
+            }
         }
         .shuzhuang-container {
             @include shuzhuang-container;
+            // padding: 60px 0;
+            height: 480px;
+            .shuzhuang-header {
+                width: 100%;
+            }
+            .shuzhuang-content {
+                width: 100%;
+                padding: 0;
+                margin-top: 10px;
+                span,
+                p {
+                    font-size: 12px;
+                }
+            }
+            .shuzhuang-footer {
+                margin-top: 3rem;
+            }
         }
         .ruanzhuang-container {
             @include ruanzhuang-container;
+            // padding: 0;
+            height: 400px;
+            .ruanzhuang-header {
+                width: 100%;
+            }
+            .ruanzhuang-content {
+                width: 100%;
+                padding: 0;
+            }
         }
         .yikefengshui-container {
             @include yikefengshui-container;
+            height: 500px;
+            .yikefengshui-header {
+                width: 100%;
+                padding: 0;
+            }
+            .yikefengshui-content {
+                width: 100%;
+                padding: 0;
+                .yikefengshui-img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-100%);
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+                .yikefengshui-img img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
+            .text {
+                .text-content,
+                span {
+                    font-size: 12px;
+                }
+                div {
+                    margin: 0;
+                }
+            }
         }
         .honor-container {
             @include honor-container;
+            height: 500px;
+            padding: 60px 0;
+            .honor-header {
+                width: 100%;
+                padding: 0;
+            }
+            .honor-content {
+                width: 100%;
+                padding: 0;
+                .am-g {
+                    width: 100%;
+                    div {
+                        padding: 4px;
+                    }
+                }
+                margin-top: 10px;
+            }
+            .honor-footer {
+                margin-top: 3rem;
+            }
         }
         .gongyi-container {
             @include gongyi-container;
+            padding: 60px 0 0 0;
+            .gongyi-header {
+                width: 100%;
+                padding: 0;
+            }
+            .gongyi-content {
+                margin-top: 3rem;
+                p {
+                    margin: 3rem auto;
+                }
+            }
+            .gongyi-box {
+                width: 100%;
+                padding: 0;
+                div {
+                    span:last-child {
+                        right: 2px;
+                    }
+                }
+                .icon {
+                    display: none;
+                }
+            }
         }
         .shop-container {
             @include shop-container;
+            width: 100%;
+            padding: 0;
+            .shop-header {
+                width: 100%;
+                padding-top: 60px;
+            }
+            .shop-content {
+                width: 100%;
+                padding: 0;
+                .am-thumbnail-caption {
+                    p {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            .shop-footer {
+                padding: 10px 0 60px 0;
+                margin: 0;
+            }
         }
         .about-container {
             @include about-container;
+            padding: 0;
+            .about {
+                width: 100%;
+                padding: 0;
+                .first,
+                .second,
+                .third {
+                    p {
+                        font-size: 16px;
+                    }
+                    div {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .right {
+                    margin: 0;
+                }
+            }
         }
     }
-
+    
     @media all and (min-width:1024px) {
         .fix-nav-container {
             @include fix-nav-container;
