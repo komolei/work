@@ -7,8 +7,6 @@ const path = require('path'),
 
 let base = {
     index: './index.js',
-
-
 };
 
 module.exports = {
@@ -18,8 +16,12 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         // publicPath:'',
+        publicPath:'../assets/',
         filename: '[name].js',
 
+    },
+    devServer:{
+        contentBase:"./assets/html"
     },
     resolve: {
         alias: {
