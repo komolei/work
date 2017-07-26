@@ -3300,11 +3300,14 @@ __webpack_require__(302);
 __webpack_require__(303);
 __webpack_require__(304);
 __webpack_require__(305);
+__webpack_require__(306);
+__webpack_require__(307);
+__webpack_require__(312);
 
 // require('./assets/less/text.less');
 
 // js
-__webpack_require__(306);
+__webpack_require__(308);
 
 /***/ }),
 /* 115 */,
@@ -8225,6 +8228,18 @@ module.exports = function(regExp, replace){
 
 /***/ }),
 /* 306 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8362,10 +8377,45 @@ third.on("mouseleave", function () {
 
     });
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(307)))
+
+//yikefnegshui's img  其位子设定为靠左的。
+var yikefengshuiImg = $(".yikefengshui-xiangqing-img");
+var yikefengshuiImage = $(".yikefengshui-xiangqing-img img");
+
+var text = $(".text");
+
+// console.log(text);
+var imgResize = function imgResize() {
+    yikefengshuiImg.height(yikefengshuiImg.width());
+    // yikefengshuiImg.width(yikefengshuiImg.height());
+};
+imgResize();
+
+$(window).resize(function () {
+    // console.log(topHeight);
+
+    var topHeight = text.height() * 0.5;
+    if ($(this).width() < 641) {
+        imgResize();
+        yikefengshuiImg.css({
+            marginTop: topHeight
+        });
+    } else if ($(this).width() < 1024) {
+        yikefengshuiImg.css({
+            marginTop: 0,
+            top: 0
+        });
+    } else {
+        yikefengshuiImg.css({
+            marginTop: 0
+
+        });
+    }
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(309)))
 
 /***/ }),
-/* 307 */
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10933,7 +10983,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             return 1 === arguments.length ? this.off(a, "**") : this.off(b, a || "**", c);
         } }), r.holdReady = function (a) {
         a ? r.readyWait++ : r.ready(!0);
-    }, r.isArray = Array.isArray, r.parseJSON = JSON.parse, r.nodeName = B, "function" == "function" && __webpack_require__(309) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+    }, r.isArray = Array.isArray, r.parseJSON = JSON.parse, r.nodeName = B, "function" == "function" && __webpack_require__(311) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
         return r;
     }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -10943,10 +10993,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return a.$ === r && (a.$ = Wb), b && a.jQuery === r && (a.jQuery = Vb), r;
     }, b || (a.jQuery = a.$ = r), r;
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(308)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(310)(module)))
 
 /***/ }),
-/* 308 */
+/* 310 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -10974,13 +11024,19 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 309 */
+/* 311 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
 module.exports = __webpack_amd_options__;
 
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

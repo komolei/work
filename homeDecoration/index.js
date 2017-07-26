@@ -17,6 +17,10 @@ require('./assets/sass/pingo.scss');
 require('./assets/sass/gongzhuang.scss');
 require('./assets/sass/ruanzhuang.scss');
 require('./assets/sass/yikefengshui.scss');
+require('./assets/sass/brand.scss');
+require('./assets/sass/linju.scss');
+require('./assets/sass/xiangqing.scss');
+
 
 
 

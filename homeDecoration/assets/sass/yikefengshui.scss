@@ -1,7 +1,8 @@
 @mixin yikefengshui-xiangqing-container {
     // background-color: #c5b88a;
     // padding-top: 50px;
-    height: 530px;
+    // width: 1400px;
+    // height: 530px;
     padding: 0 100px;
     .yikefengshui-xiangqing-header {
         width: 1400px;
@@ -27,22 +28,27 @@
         padding: 0 100px;
         margin: 0 auto;
         position: relative;
+        .yikefengshui-xiangqing-img {}
         .yikefengshui-xiangqing-img img {
             width: 300px;
             height: 300px;
+            // max-height: 300px;
+            // max-width: 300px;
+            // float: right;
             // position: absolute;
             // top: 100%;
         }
     }
     .text {
         color: #666666;
-        right: 1rem;
+        // right: 1rem;
         p:first-child {
             font-size: 18px;
             color: #333;
         }
         .text-content {
             font-size: 14px;
+            text-indent: 2em;
         }
         div {
             margin-top: 80px;
@@ -61,13 +67,13 @@
 }
 
 @mixin example-container {
-    width: 1400px;
     padding: 0 100px;
-    margin: 0 auto;
+    // margin: 0 auto;
     .example-header {
-        // width: 1400px;
+        clear: both;
+        width: 1400px;
         margin: 0 auto;
-        // padding: 40px 100px;
+        padding: 0 100px;
         text-align: center;
         p {
             font-size: 24px;
@@ -84,32 +90,45 @@
         }
     }
     .example-content {
-        padding-top: 60px;
+        width: 1400px;
+        // padding-top: 60px;
+        // padding-bottom: 34px;
+        padding: 60px 100px 34px 100px;
+        // border-bottom: 1px dotted #deb465;
         .example-content-left {
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 35px;
+            border-bottom: 1px dotted #deb465;
             img {
-                width: 100%;
+                // width: 100%;
+                width: 300px;
+                height: 200px;
             }
         }
         .example-content-right {
-            right: 5%;
+            padding-bottom: 34px;
+            // right: 5%;
+            border-bottom: 1px dotted #deb465;
             p {
                 &:first-child {
                     color: #333;
                 }
-                ;
-                &:last-child {
+                &:nth-child(2) {
                     color: #999;
+                    text-indent: 2em;
                 }
             }
             a {
                 display: inline-block;
-                width: 8rem;
-                height: 4rem;
+                width: 100px;
+                height: 40px;
                 border: 1px solid #deb465;
                 color: #deb465;
-                line-height: 4rem;
-                font-size: 16px;
+                line-height: 40px;
+                font-size: 14px;
                 text-align: center;
+                margin-top: 12px;
             }
         }
     }
@@ -126,10 +145,10 @@
     .yikefengshui-xiangqing-container {
         @include yikefengshui-xiangqing-container;
         padding: 0;
-        height: 700px;
+        // height: 700px;
         .yikefengshui-xiangqing-header {
             width: 100%;
-            padding: 0;
+            padding: 20px 0 0 0;
         }
         .yikefengshui-xiangqing-content {
             width: 100%;
@@ -137,14 +156,14 @@
             .yikefengshui-xiangqing-img {
                 position: absolute;
                 top: 50%;
-                transform: translateY(-100%);
-                width: 100px;
-                height: 100px;
+                transform: translateY(-50%);
+                // width: 100px;
+                // height: 100px;
                 border-radius: 50%;
             }
             .yikefengshui-xiangqing-img img {
-                width: 100px;
-                height: 100px;
+                width: 100%;
+                height: 100%;
                 border-radius: 50%;
             }
         }
@@ -155,6 +174,32 @@
             }
             div {
                 margin: 0;
+            }
+        }
+    }
+    .example-container {
+        @include example-container;
+        width: 100%;
+        padding: 20px 0 0 0;
+        clear: both;
+        .example-header {
+            width: 100%;
+            padding: 0;
+        }
+        .example-content {
+            width: 100%;
+            padding: 30px 0 20px 0;
+            .example-content-left {
+                padding-left: 1rem;
+                img {
+                    // max-width: 300px;
+                    width: 100%;
+                }
+            }
+            .example-content-right {
+                a {
+                    margin-top: 7px;
+                }
             }
         }
     }
@@ -166,8 +211,12 @@
     }
     .yikefengshui-xiangqing-container {
         @include yikefengshui-xiangqing-container;
-        height: 500px;
+        // padding: 40px 0;
+        clear: both;
+        padding: 0;
+        height: 400px;
         .yikefengshui-xiangqing-header {
+            clear: both;
             width: 100%;
             padding: 40px 0;
         }
@@ -175,16 +224,16 @@
             width: 100%;
             padding: 0;
             .yikefengshui-xiangqing-img {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-100%);
+                // position: absolute;
+                // top: 50%;
+                // transform: translateY(-100%);
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
             }
             .yikefengshui-xiangqing-img img {
-                width: 100px;
-                height: 100px;
+                max-width: 200px;
+                max-height: 200px;
                 border-radius: 50%;
             }
         }
@@ -195,6 +244,31 @@
             }
             div {
                 margin: 0;
+            }
+        }
+    }
+    .example-container {
+        @include example-container;
+        width: 100%;
+        padding: 0;
+        .example-header {
+            width: 100%;
+            padding: 0;
+        }
+        .example-content {
+            width: 100%;
+            padding: 30px 0 20px 0;
+            .example-content-left {
+                padding-left: 1rem;
+                img {
+                    // max-width: 300px;
+                    width: 100%;
+                }
+            }
+            .example-content-right {
+                a {
+                    margin-top: 7px;
+                }
             }
         }
     }
@@ -210,7 +284,7 @@
     .yikefengshui-xiangqing-container {
         .text {
             p:first-child {
-                margin-bottom: 35px;
+                margin-bottom: 33px;
                 margin-top: 35px;
             }
         }

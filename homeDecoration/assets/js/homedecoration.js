@@ -131,3 +131,43 @@ third.on("mouseleave", function() {
 
     })
 })
+
+
+//yikefnegshui's img  其位子设定为靠左的。
+var yikefengshuiImg = $(".yikefengshui-xiangqing-img");
+var yikefengshuiImage = $(".yikefengshui-xiangqing-img img");
+
+
+var text = $(".text");
+
+// console.log(text);
+var imgResize = function() {
+    yikefengshuiImg.height(yikefengshuiImg.width());
+    // yikefengshuiImg.width(yikefengshuiImg.height());
+}
+imgResize();
+
+$(window).resize(function() {
+    // console.log(topHeight);
+
+    var topHeight = text.height() * 0.5;
+    if ($(this).width() < 641) {
+        imgResize();
+        yikefengshuiImg.css({
+            marginTop: topHeight,
+        })
+    } else if ($(this).width() < 1024) {
+        yikefengshuiImg.css({
+            marginTop: 0,
+            top: 0,
+        })
+    } else {
+        yikefengshuiImg.css({
+            marginTop: 0,
+
+        })
+    }
+
+
+
+})

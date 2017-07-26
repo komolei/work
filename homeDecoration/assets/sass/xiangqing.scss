@@ -1,0 +1,83 @@
+// @media all and (max-width:641px) {}
+// @media all and (min-width:641px) and (max-width:1024px) {}
+// @media all and (min-width:1024px) {}
+@mixin xiangqing-container {
+    width: 1400px;
+    padding: 0 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    .xiangqing {
+        padding: 0 100px;
+        p {
+            &:first-child {
+                font-size: 24px;
+                color: #333;
+                text-align: center;
+                font-weight: 800;
+            }
+            &:nth-child(2) {
+                font-size: 12px;
+                color: #999;
+                text-align: center;
+                margin-top: 15px;
+            }
+            &:nth-child(3) {
+                width: 100%;
+                height: 1px;
+                background: #f5f5f5;
+                margin: 30px 0;
+            }
+            &:nth-child(4) {
+                font-size: 14px;
+                color: #666;
+                text-indent: 2em;
+                margin-bottom: 30px;
+            }
+            &:nth-child(6) {
+                font-size: 14px;
+                color: #666;
+                text-indent: 2em;
+                margin-top: 30px;
+            }
+        }
+        img {
+            // max-width: 80%;
+            width: 685px;
+            height: 430px;
+            margin: 0 auto;
+        }
+    }
+    .xiangqing-footer {
+        margin-top: 75px;
+        span {
+            color: #666;
+            cursor: pointer;
+        }
+    }
+}
+
+@media all and (max-width:641px) {
+    .xiangqing-container {
+        @include xiangqing-container;
+        // margin-top: 30px;
+        width: 100%;
+        padding: 0;
+        .xiangqing {
+            padding: 0 1rem;
+        }
+    }
+}
+
+@media all and (min-width:641px) and (max-width:1024px) {
+    .xiangqing-container {
+        @include xiangqing-container;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media all and (min-width:1024px) {
+    .xiangqing-container {
+        @include xiangqing-container
+    }
+}
