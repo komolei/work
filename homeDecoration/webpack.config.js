@@ -16,13 +16,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         // publicPath:'',
-        publicPath:'../assets/',
+        // publicPath: '../assets/',
         filename: '[name].js',
 
     },
-    devServer:{
-        contentBase:"./assets/html"
-    },
+    // devServer: {
+    //     contentBase: "./assets/html"
+    // },
     resolve: {
         alias: {
             // test: path.resolve(__dirname, 'test/test.js'),

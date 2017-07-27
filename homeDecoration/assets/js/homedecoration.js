@@ -4,12 +4,20 @@ var up = $(".up");
 var flexbox = $(".fix-flexbox");
 var isLockUp = false;
 up.on("click", function() {
-    flexbox.slideUp();
+    flexbox.slideUp(function() {
+        $(".fix-flexbox-p .icon").css({
+            opacity: 1
+        })
+    });
+
 })
 fixboxP.on("click", function() {
-        flexbox.slideDown();
+    flexbox.slideDown();
+    $(".fix-flexbox-p .icon").css({
+        opacity: 0
     })
-    // console.log(up);
+})
+console.log(up);
 
 
 // 工装 有问题 等等有空去优化一下
@@ -45,6 +53,7 @@ first.on("mouseleave", function() {
     $(".gongzhuang-content .first div").eq(0).css({
         opacity: .3,
         marginTop: "15px",
+
 
     })
     $(".gongzhuang-content .first img").animate({
@@ -167,7 +176,6 @@ $(window).resize(function() {
 
         })
     }
-
-
-
 })
+
+//gongyi右边图片对称

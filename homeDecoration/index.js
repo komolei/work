@@ -20,6 +20,11 @@ require('./assets/sass/yikefengshui.scss');
 require('./assets/sass/brand.scss');
 require('./assets/sass/linju.scss');
 require('./assets/sass/xiangqing.scss');
+require('./assets/sass/gongyi.scss');
+require('./assets/sass/shop.scss');
+require('./assets/sass/pingao.scss');
+
+
 
 
 
