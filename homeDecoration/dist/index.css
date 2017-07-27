@@ -162,8 +162,8 @@ body {
           height: 80px;
           word-wrap: break-word;
           word-break: normal;
-          margin-top: 140px;
-          margin-bottom: 100px; }
+          margin-top: 80px;
+          margin-bottom: 50px; }
         .pingo-container .pingo-content .pingo-content-right a {
           display: inline-block;
           width: 8rem;
@@ -197,8 +197,9 @@ body {
       .pingo-container .pingo-content .pingo-content-right {
         right: 1rem; }
         .pingo-container .pingo-content .pingo-content-right p {
-          margin-top: 10px; }
+          margin-top: 40px; }
         .pingo-container .pingo-content .pingo-content-right a {
+          margin-top: 40px;
           margin-left: -100%; }
   .gongzhuang-container {
     padding-top: 40px;
@@ -1007,8 +1008,8 @@ body {
           height: 80px;
           word-wrap: break-word;
           word-break: normal;
-          margin-top: 140px;
-          margin-bottom: 100px; }
+          margin-top: 80px;
+          margin-bottom: 50px; }
         .pingo-container .pingo-content .pingo-content-right a {
           display: inline-block;
           width: 8rem;
@@ -1042,7 +1043,9 @@ body {
       .pingo-container .pingo-content .pingo-content-right {
         padding: 0 1rem; }
         .pingo-container .pingo-content .pingo-content-right p {
-          margin-top: 10px; }
+          margin-top: 10px;
+          margin-top: 40px;
+          margin-bottom: 90px; }
   .gongzhuang-container {
     padding-top: 40px;
     background: #f7f5f6;
@@ -1933,8 +1936,8 @@ body {
           height: 80px;
           word-wrap: break-word;
           word-break: normal;
-          margin-top: 140px;
-          margin-bottom: 100px; }
+          margin-top: 80px;
+          margin-bottom: 50px; }
         .pingo-container .pingo-content .pingo-content-right a {
           display: inline-block;
           width: 8rem;
