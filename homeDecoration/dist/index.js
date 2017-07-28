@@ -8296,122 +8296,167 @@ console.log(up);
 var first = $(".gongzhuang-content .first");
 var second = $(".gongzhuang-content .second");
 var third = $(".gongzhuang-content .third");
-console.log(first);
-first.on("mouseover", function () {
-    console.log(1);
-    $(".gongzhuang-content .second div").eq(0).css({
-        opacity: .3,
-        marginTop: "15px"
+var first1 = $(".absolute .first1");
+var second1 = $(".absolute .second1");
+var third1 = $(".absolute .third1");
+console.log(first1, "gg");
 
+// var first1 = first.clone();
+// console.log("clone", first1);
+first1.on("mouseover", function () {
+    // first1.css({
+    //         display: "hidden"
+    //     })
+    first1.has("img").css({
+        // opacity: 0,
     });
-    $(".gongzhuang-content .second img").animate({
-        height: "600px",
-        width: "100%"
+    // first1.css;
+    first1.animate({
+        // height: "660px",
+        // width: "100%",
+        // marginTop: "-30px",
+    });
+    // var first1Width = first1.width();
+    // first.width(first1Width);
 
-    });
-    $(".gongzhuang-content .first img").animate({
-        height: "660px"
-        // width: "125%"
-
-    });
-    $(".gongzhuang-content .first div").eq(0).css({
-        opacity: 1,
-        marginTop: "-30px"
-
-    });
-});
-first.on("mouseleave", function () {
-    $(".gongzhuang-content .first div").eq(0).css({
-        opacity: .3,
-        marginTop: "15px"
-
-    });
-    $(".gongzhuang-content .first img").animate({
-        height: "600px",
-        width: "100%"
-
-    });
-    $(".gongzhuang-content .second img").animate({
-        height: "660px"
-        // width: "125%"
-
-    });
-    $(".gongzhuang-content .second div").eq(0).css({
-        opacity: 1,
-        marginTop: "-15px"
-        // height: "630px"
-
-    });
-});
-second.on("mouseover", function () {
-    $(".gongzhuang-content .second div").eq(0).css({
-        opacity: 1,
-        marginTop: "-15px"
-
-    });
-    $(".gongzhuang-content .second img").animate({
+    first.has("img").css({
+        // width: "34%",
         height: "660px",
-        width: "100%"
-
+        bordre: "1px solid red"
     });
-    $(".gongzhuang-content .third img").animate({
-        height: "600px"
-        // width: "125%"
+    // first1.width(first.width());
 
+    second1.css({});
+});
+first1.on("mouseleave", function () {
+    first.has("img").css({
+        opacity: 1
     });
-    $(".gongzhuang-content .third div").eq(0).css({
-        opacity: .3,
+    first.animate({
+        // height: "660px",
+        // width: "100%",
         marginTop: "0px"
 
     });
 });
-third.on("mouseover", function () {
-    $(".gongzhuang-content .second div").eq(0).css({
-        opacity: .3,
-        marginTop: "15px"
+// first1.on("mouseover", function() {
+//     console.log(1);
+//     $(".gongzhuang-content .second div").eq(0).css({
+//         opacity: .3,
+//         marginTop: "15px",
 
-    });
-    $(".gongzhuang-content .second img").animate({
-        height: "600px",
-        width: "100%"
+//     })
+//     $(".gongzhuang-content .second img").animate({
+//         height: "600px",
+//         width: "100%",
 
-    });
-    $(".gongzhuang-content .third img").animate({
-        height: "660px"
-        // width: "125%"
+//     })
+//     $(".gongzhuang-content .first img").animate({
+//         height: "660px",
+//         // width: "125%"
 
-    });
-    $(".gongzhuang-content .third div").eq(0).css({
-        opacity: 1,
-        marginTop: "-30px"
+//     })
+//     $(".gongzhuang-content .first div").eq(0).css({
+//         opacity: 1,
+//         marginTop: "-30px",
 
-    });
-});
-third.on("mouseleave", function () {
-    $(".gongzhuang-content .third div").eq(0).css({
-        opacity: .3,
-        marginTop: "0px"
+//     })
 
-    });
-    $(".gongzhuang-content .third img").animate({
-        height: "600px",
-        width: "100%"
+// })
+// first.on("mouseleave", function() {
+//     $(".gongzhuang-content .first div").eq(0).css({
+//         opacity: .3,
+//         marginTop: "15px",
 
-    });
-    $(".gongzhuang-content .second img").animate({
-        height: "660px"
-        // width: "125%"
 
-    });
-    $(".gongzhuang-content .second div").eq(0).css({
-        opacity: 1,
-        marginTop: "-15px"
-        // height: "630px"
+//     })
+//     $(".gongzhuang-content .first img").animate({
+//         height: "600px",
+//         width: "100%",
 
-    });
-});
+//     })
+//     $(".gongzhuang-content .second img").animate({
+//         height: "660px",
+//         // width: "125%"
 
-//yikefnegshui's img  其位子设定为靠左的。
+//     })
+//     $(".gongzhuang-content .second div").eq(0).css({
+//         opacity: 1,
+//         marginTop: "-15px",
+//         // height: "630px"
+
+//     })
+// })
+// second.on("mouseover", function() {
+//     $(".gongzhuang-content .second div").eq(0).css({
+//         opacity: 1,
+//         marginTop: "-15px",
+
+//     })
+//     $(".gongzhuang-content .second img").animate({
+//         height: "660px",
+//         width: "100%",
+
+//     })
+//     $(".gongzhuang-content .third img").animate({
+//         height: "600px",
+//         // width: "125%"
+
+//     })
+//     $(".gongzhuang-content .third div").eq(0).css({
+//         opacity: .3,
+//         marginTop: "0px",
+
+//     })
+// })
+// third.on("mouseover", function() {
+//     $(".gongzhuang-content .second div").eq(0).css({
+//         opacity: .3,
+//         marginTop: "15px",
+
+//     })
+//     $(".gongzhuang-content .second img").animate({
+//         height: "600px",
+//         width: "100%",
+
+//     })
+//     $(".gongzhuang-content .third img").animate({
+//         height: "660px",
+//         // width: "125%"
+
+//     })
+//     $(".gongzhuang-content .third div").eq(0).css({
+//         opacity: 1,
+//         marginTop: "-30px",
+
+//     })
+// })
+// third.on("mouseleave", function() {
+//     $(".gongzhuang-content .third div").eq(0).css({
+//         opacity: .3,
+//         marginTop: "0px",
+
+//     })
+//     $(".gongzhuang-content .third img").animate({
+//         height: "600px",
+//         width: "100%",
+
+//     })
+//     $(".gongzhuang-content .second img").animate({
+//         height: "660px",
+//         // width: "125%"
+
+//     })
+//     $(".gongzhuang-content .second div").eq(0).css({
+//         opacity: 1,
+//         marginTop: "-15px",
+//         // height: "630px"
+
+//     })
+// })
+
+
+// yikefnegshui 's img  其位子设定为靠左的。
 var yikefengshuiImg = $(".yikefengshui-xiangqing-img");
 var yikefengshuiImage = $(".yikefengshui-xiangqing-img img");
 

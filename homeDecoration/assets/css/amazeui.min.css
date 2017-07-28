@@ -561,7 +561,7 @@ select {
         width: 8.33333333%
     }
     .am-u-sm-2 {
-        width: 16.66666667%
+        width: 20.00%;
     }
     .am-u-sm-3 {
         width: 25%
@@ -731,7 +731,7 @@ select {
         width: 8.33333333%
     }
     .am-u-md-2 {
-        width: 16.66666667%
+        width: 20%
     }
     .am-u-md-3 {
         width: 25%
@@ -901,7 +901,7 @@ select {
         width: 8.33333333%
     }
     .am-u-lg-2 {
-        width: 16.66666667%
+        width: 20%;
     }
     .am-u-lg-3 {
         width: 25%
@@ -1586,8 +1586,9 @@ fieldset[disabled] .am-btn-default:hover {
 
 .am-btn-primary {
     color: #fff;
-    background-color: #0e90d2;
-    border-color: #0e90d2
+    background-color: #deb465;
+    border-color: #deb465;
+    cursor: pointer;
 }
 
 a.am-btn-primary:visited {
@@ -1600,19 +1601,19 @@ a.am-btn-primary:visited {
 .am-btn-primary:hover,
 .am-dropdown.am-active .am-btn-primary.am-dropdown-toggle {
     color: #fff;
-    border-color: #0a6999
+    border-color: #deb465
 }
 
 .am-btn-primary:focus,
 .am-btn-primary:hover {
-    background-color: #0c79b1
+    background-color: #deb465
 }
 
 .am-btn-primary.am-active,
 .am-btn-primary:active,
 .am-dropdown.am-active .am-btn-primary.am-dropdown-toggle {
     background-image: none;
-    background-color: #0a628f
+    background-color: #deb465
 }
 
 .am-btn-primary.am-disabled,
@@ -9920,8 +9921,8 @@ ul.am-dropdown-content>.am-disabled>a:hover {
     top: 50%;
     z-index: 10;
     display: block;
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
     margin: -18px 0 0;
     overflow: hidden;
     opacity: .45;
@@ -9944,7 +9945,7 @@ ul.am-dropdown-content>.am-disabled>a:hover {
     width: 100%;
     color: #333;
     content: "\f137";
-    font-size: 24px!important;
+    font-size: 40px!important;
     text-align: center;
     line-height: 36px!important;
     height: 36px
