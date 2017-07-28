@@ -54,8 +54,13 @@ first1.on("mouseover", function() {
         })
         // first1.width(first.width());
 
-    second1.css({
+    second1.has("img").css({
+        opacity: 1,
+    });
+    console.log(second1.has("img"), "sss");
 
+    second1.has(".footer").css({
+        opacity: 0
     })
 })
 first1.on("mouseleave", function() {
